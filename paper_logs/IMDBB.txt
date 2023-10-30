@@ -1,0 +1,743 @@
+--------------------------------------------------
+dataset: IMDB-BINARY
+depth: -1
+device: 1
+jepa:
+  enable: True
+  num_context: 1
+  num_targets: 4
+k: 10
+logfile: None
+metis:
+  drop_rate: 0.3
+  enable: True
+  n_patches: 32
+  num_hops: 1
+  online: True
+model:
+  gMHA_type: Hadamard
+  gnn_type: GINEConv
+  hidden_size: 512
+  nlayer_gnn: 2
+  nlayer_mlpmixer: 4
+  pool: mean
+  residual: True
+num_workers: 8
+pos_enc:
+  lap_dim: 0
+  patch_num_diff: 0
+  patch_rw_dim: 15
+  rw_dim: 15
+seed: None
+train:
+  batch_size: 32
+  dropout: 0.0
+  epochs: 10
+  lr: 0.0005
+  lr_decay: 0.5
+  lr_patience: 30
+  min_lr: 1e-05
+  mlpmixer_dropout: 0.0
+  multiscale: False
+  optimizer: Adam
+  runs: 5
+  wd: 0.0
+--------------------------------------------------
+Time: 2023/09/13 - 04:08
+Epoch/Fold: 000/0, Train Loss: 0.1804 Test Loss:0.0219, Seconds: 5.4140, 
+Epoch/Fold: 001/0, Train Loss: 0.0061 Test Loss:0.0028, Seconds: 5.3444, 
+Epoch/Fold: 002/0, Train Loss: 0.0019 Test Loss:0.0014, Seconds: 5.2268, 
+Epoch/Fold: 003/0, Train Loss: 0.0019 Test Loss:0.0020, Seconds: 4.9512, 
+Epoch/Fold: 004/0, Train Loss: 0.0022 Test Loss:0.0032, Seconds: 5.3363, 
+Epoch/Fold: 005/0, Train Loss: 0.0083 Test Loss:0.0066, Seconds: 4.8510, 
+Epoch/Fold: 006/0, Train Loss: 0.0340 Test Loss:0.0562, Seconds: 4.8308, 
+Epoch/Fold: 007/0, Train Loss: 0.1257 Test Loss:0.0326, Seconds: 4.7307, 
+Epoch/Fold: 008/0, Train Loss: 0.2042 Test Loss:0.2138, Seconds: 5.7667, 
+Epoch/Fold: 009/0, Train Loss: 0.2143 Test Loss:0.0450, Seconds: 5.2549, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 0, Seconds/epoch: 5.170679450035095
+Acc.: 0.75
+Epoch/Fold: 000/1, Train Loss: 0.2650 Test Loss:0.1447, Seconds: 5.4351, 
+Epoch/Fold: 001/1, Train Loss: 0.0463 Test Loss:0.0137, Seconds: 5.1380, 
+Epoch/Fold: 002/1, Train Loss: 0.0088 Test Loss:0.0038, Seconds: 5.2628, 
+Epoch/Fold: 003/1, Train Loss: 0.0054 Test Loss:0.0026, Seconds: 5.1759, 
+Epoch/Fold: 004/1, Train Loss: 0.0091 Test Loss:0.0167, Seconds: 5.4035, 
+Epoch/Fold: 005/1, Train Loss: 0.0168 Test Loss:0.0051, Seconds: 5.3312, 
+Epoch/Fold: 006/1, Train Loss: 0.0073 Test Loss:0.0041, Seconds: 5.2080, 
+Epoch/Fold: 007/1, Train Loss: 0.0055 Test Loss:0.0048, Seconds: 5.1528, 
+Epoch/Fold: 008/1, Train Loss: 0.0063 Test Loss:0.0036, Seconds: 5.2917, 
+Epoch/Fold: 009/1, Train Loss: 0.0064 Test Loss:0.0043, Seconds: 5.2980, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 1, Seconds/epoch: 5.2696919441223145
+Acc.: 0.73
+Epoch/Fold: 000/2, Train Loss: 0.3047 Test Loss:0.3055, Seconds: 5.2483, 
+Epoch/Fold: 001/2, Train Loss: 0.1474 Test Loss:0.0607, Seconds: 5.4747, 
+Epoch/Fold: 002/2, Train Loss: 0.0240 Test Loss:0.0112, Seconds: 5.4720, 
+Epoch/Fold: 003/2, Train Loss: 0.0038 Test Loss:0.0028, Seconds: 5.5168, 
+Epoch/Fold: 004/2, Train Loss: 0.0082 Test Loss:0.0182, Seconds: 5.3808, 
+Epoch/Fold: 005/2, Train Loss: 0.0180 Test Loss:0.0541, Seconds: 5.3306, 
+Epoch/Fold: 006/2, Train Loss: 0.0659 Test Loss:0.2738, Seconds: 5.3399, 
+Epoch/Fold: 007/2, Train Loss: 0.1131 Test Loss:0.0817, Seconds: 5.8125, 
+Epoch/Fold: 008/2, Train Loss: 0.1589 Test Loss:0.2261, Seconds: 5.3767, 
+Epoch/Fold: 009/2, Train Loss: 0.3170 Test Loss:0.5471, Seconds: 5.1887, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 2, Seconds/epoch: 5.414086174964905
+Acc.: 0.77
+Epoch/Fold: 000/3, Train Loss: 0.1405 Test Loss:0.0275, Seconds: 5.2998, 
+Epoch/Fold: 001/3, Train Loss: 0.0235 Test Loss:0.0145, Seconds: 5.5795, 
+Epoch/Fold: 002/3, Train Loss: 0.0240 Test Loss:0.0281, Seconds: 6.0145, 
+Epoch/Fold: 003/3, Train Loss: 0.0195 Test Loss:0.0220, Seconds: 5.7594, 
+Epoch/Fold: 004/3, Train Loss: 0.0263 Test Loss:0.0338, Seconds: 5.3313, 
+Epoch/Fold: 005/3, Train Loss: 0.0816 Test Loss:0.0582, Seconds: 5.3809, 
+Epoch/Fold: 006/3, Train Loss: 0.1341 Test Loss:0.1263, Seconds: 5.3340, 
+Epoch/Fold: 007/3, Train Loss: 0.1870 Test Loss:0.0964, Seconds: 5.3197, 
+Epoch/Fold: 008/3, Train Loss: 0.1894 Test Loss:0.1509, Seconds: 5.2817, 
+Epoch/Fold: 009/3, Train Loss: 0.2069 Test Loss:0.0880, Seconds: 5.4463, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 3, Seconds/epoch: 5.47471125125885
+Acc.: 0.68
+Epoch/Fold: 000/4, Train Loss: 0.1402 Test Loss:0.1029, Seconds: 5.4551, 
+Epoch/Fold: 001/4, Train Loss: 0.0283 Test Loss:0.0327, Seconds: 5.5752, 
+Epoch/Fold: 002/4, Train Loss: 0.0222 Test Loss:0.0348, Seconds: 7.1040, 
+Epoch/Fold: 003/4, Train Loss: 0.0269 Test Loss:0.0704, Seconds: 5.2465, 
+Epoch/Fold: 004/4, Train Loss: 0.0457 Test Loss:0.1087, Seconds: 5.2496, 
+Epoch/Fold: 005/4, Train Loss: 0.0506 Test Loss:0.3138, Seconds: 5.2864, 
+Epoch/Fold: 006/4, Train Loss: 0.0389 Test Loss:0.0314, Seconds: 5.5122, 
+Epoch/Fold: 007/4, Train Loss: 0.0243 Test Loss:0.1540, Seconds: 5.3744, 
+Epoch/Fold: 008/4, Train Loss: 0.1067 Test Loss:0.5741, Seconds: 5.3490, 
+Epoch/Fold: 009/4, Train Loss: 0.1776 Test Loss:0.6086, Seconds: 5.3222, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 4, Seconds/epoch: 5.547458982467651
+Acc.: 0.73
+Epoch/Fold: 000/5, Train Loss: 0.2671 Test Loss:0.0611, Seconds: 5.2898, 
+Epoch/Fold: 001/5, Train Loss: 0.0209 Test Loss:0.0265, Seconds: 5.4028, 
+Epoch/Fold: 002/5, Train Loss: 0.0314 Test Loss:0.0152, Seconds: 5.4448, 
+Epoch/Fold: 003/5, Train Loss: 0.0655 Test Loss:0.0497, Seconds: 5.5574, 
+Epoch/Fold: 004/5, Train Loss: 0.0811 Test Loss:0.1006, Seconds: 5.0363, 
+Epoch/Fold: 005/5, Train Loss: 0.0713 Test Loss:0.0967, Seconds: 4.8114, 
+Epoch/Fold: 006/5, Train Loss: 0.0750 Test Loss:0.0561, Seconds: 5.9752, 
+Epoch/Fold: 007/5, Train Loss: 0.0439 Test Loss:0.0501, Seconds: 6.1396, 
+Epoch/Fold: 008/5, Train Loss: 0.1444 Test Loss:0.2362, Seconds: 6.5198, 
+Epoch/Fold: 009/5, Train Loss: 0.3883 Test Loss:0.2425, Seconds: 5.5103, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 5, Seconds/epoch: 5.568742513656616
+Acc.: 0.73
+Epoch/Fold: 000/6, Train Loss: 0.2173 Test Loss:0.0790, Seconds: 5.1544, 
+Epoch/Fold: 001/6, Train Loss: 0.0391 Test Loss:0.0145, Seconds: 4.9846, 
+Epoch/Fold: 002/6, Train Loss: 0.0088 Test Loss:0.0048, Seconds: 4.7950, 
+Epoch/Fold: 003/6, Train Loss: 0.0047 Test Loss:0.0082, Seconds: 5.4194, 
+Epoch/Fold: 004/6, Train Loss: 0.0031 Test Loss:0.0017, Seconds: 5.2624, 
+Epoch/Fold: 005/6, Train Loss: 0.0017 Test Loss:0.0024, Seconds: 5.5137, 
+Epoch/Fold: 006/6, Train Loss: 0.0033 Test Loss:0.0093, Seconds: 5.3144, 
+Epoch/Fold: 007/6, Train Loss: 0.0062 Test Loss:0.0049, Seconds: 5.6998, 
+Epoch/Fold: 008/6, Train Loss: 0.0076 Test Loss:0.0145, Seconds: 5.4626, 
+Epoch/Fold: 009/6, Train Loss: 0.0205 Test Loss:0.0314, Seconds: 5.2907, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 6, Seconds/epoch: 5.289712810516358
+Acc.: 0.7
+Epoch/Fold: 000/7, Train Loss: 0.1820 Test Loss:0.0104, Seconds: 6.0673, 
+Epoch/Fold: 001/7, Train Loss: 0.0103 Test Loss:0.0224, Seconds: 6.5543, 
+Epoch/Fold: 002/7, Train Loss: 0.0213 Test Loss:0.0579, Seconds: 5.5128, 
+Epoch/Fold: 003/7, Train Loss: 0.0549 Test Loss:0.0216, Seconds: 5.6825, 
+Epoch/Fold: 004/7, Train Loss: 0.0171 Test Loss:0.0079, Seconds: 5.4503, 
+Epoch/Fold: 005/7, Train Loss: 0.0087 Test Loss:0.0253, Seconds: 5.3494, 
+Epoch/Fold: 006/7, Train Loss: 0.0161 Test Loss:0.0502, Seconds: 5.3170, 
+Epoch/Fold: 007/7, Train Loss: 0.0138 Test Loss:0.0044, Seconds: 5.1543, 
+Epoch/Fold: 008/7, Train Loss: 0.0054 Test Loss:0.0052, Seconds: 5.0439, 
+Epoch/Fold: 009/7, Train Loss: 0.0053 Test Loss:0.0046, Seconds: 5.1032, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 7, Seconds/epoch: 5.523488688468933
+Acc.: 0.78
+Epoch/Fold: 000/8, Train Loss: 0.1114 Test Loss:0.0088, Seconds: 5.3163, 
+Epoch/Fold: 001/8, Train Loss: 0.0036 Test Loss:0.0019, Seconds: 5.1907, 
+Epoch/Fold: 002/8, Train Loss: 0.0037 Test Loss:0.0349, Seconds: 5.4328, 
+Epoch/Fold: 003/8, Train Loss: 0.0136 Test Loss:0.0080, Seconds: 5.3343, 
+Epoch/Fold: 004/8, Train Loss: 0.0095 Test Loss:0.0435, Seconds: 5.6381, 
+Epoch/Fold: 005/8, Train Loss: 0.0232 Test Loss:0.0604, Seconds: 6.4622, 
+Epoch/Fold: 006/8, Train Loss: 0.0544 Test Loss:0.0572, Seconds: 6.9663, 
+Epoch/Fold: 007/8, Train Loss: 0.0469 Test Loss:0.0195, Seconds: 5.3319, 
+Epoch/Fold: 008/8, Train Loss: 0.0452 Test Loss:0.0521, Seconds: 5.4136, 
+Epoch/Fold: 009/8, Train Loss: 0.0345 Test Loss:0.0086, Seconds: 5.2701, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 8, Seconds/epoch: 5.635624170303345
+Acc.: 0.74
+Epoch/Fold: 000/9, Train Loss: 0.2163 Test Loss:0.1182, Seconds: 5.4179, 
+Epoch/Fold: 001/9, Train Loss: 0.0606 Test Loss:0.0375, Seconds: 5.3907, 
+Epoch/Fold: 002/9, Train Loss: 0.0287 Test Loss:0.0215, Seconds: 5.2191, 
+Epoch/Fold: 003/9, Train Loss: 0.0160 Test Loss:0.0676, Seconds: 5.4520, 
+Epoch/Fold: 004/9, Train Loss: 0.0295 Test Loss:0.1551, Seconds: 5.3634, 
+Epoch/Fold: 005/9, Train Loss: 0.1138 Test Loss:0.1573, Seconds: 5.5092, 
+Epoch/Fold: 006/9, Train Loss: 0.2755 Test Loss:0.4128, Seconds: 5.4307, 
+Epoch/Fold: 007/9, Train Loss: 0.6357 Test Loss:4.8918, Seconds: 5.6436, 
+Epoch/Fold: 008/9, Train Loss: 1.2907 Test Loss:3.7476, Seconds: 5.6527, 
+Epoch/Fold: 009/9, Train Loss: 2.8581 Test Loss:46.5042, Seconds: 5.5783, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 9, Seconds/epoch: 5.465767168998719
+Acc.: 0.69
+
+Run:  0
+Train Loss: 2.8581
+Convergence Time (Epochs): 10
+AVG TIME PER EPOCH: 5.4658 s
+TOTAL TIME TAKEN: 0.0152 h
+Acc mean: 0.7300000000000001, std: 0.030983866769659345
+
+Epoch/Fold: 000/0, Train Loss: 0.1096 Test Loss:0.0111, Seconds: 5.0910, 
+Epoch/Fold: 001/0, Train Loss: 0.0145 Test Loss:0.0124, Seconds: 5.0152, 
+Epoch/Fold: 002/0, Train Loss: 0.0102 Test Loss:0.0058, Seconds: 4.6847, 
+Epoch/Fold: 003/0, Train Loss: 0.0061 Test Loss:0.0036, Seconds: 5.7595, 
+Epoch/Fold: 004/0, Train Loss: 0.0027 Test Loss:0.0029, Seconds: 5.3582, 
+Epoch/Fold: 005/0, Train Loss: 0.0025 Test Loss:0.0034, Seconds: 5.2796, 
+Epoch/Fold: 006/0, Train Loss: 0.0026 Test Loss:0.0053, Seconds: 5.3462, 
+Epoch/Fold: 007/0, Train Loss: 0.0025 Test Loss:0.0035, Seconds: 5.1939, 
+Epoch/Fold: 008/0, Train Loss: 0.0028 Test Loss:0.0019, Seconds: 5.5860, 
+Epoch/Fold: 009/0, Train Loss: 0.0027 Test Loss:0.0013, Seconds: 5.4416, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 0, Seconds/epoch: 5.275593543052674
+Acc.: 0.73
+Epoch/Fold: 000/1, Train Loss: 0.1285 Test Loss:0.0261, Seconds: 5.2568, 
+Epoch/Fold: 001/1, Train Loss: 0.0335 Test Loss:0.0337, Seconds: 6.7144, 
+Epoch/Fold: 002/1, Train Loss: 0.0392 Test Loss:0.0351, Seconds: 5.2360, 
+Epoch/Fold: 003/1, Train Loss: 0.0343 Test Loss:0.0186, Seconds: 5.1924, 
+Epoch/Fold: 004/1, Train Loss: 0.0132 Test Loss:0.0038, Seconds: 5.6666, 
+Epoch/Fold: 005/1, Train Loss: 0.0022 Test Loss:0.0010, Seconds: 5.5922, 
+Epoch/Fold: 006/1, Train Loss: 0.0048 Test Loss:0.0258, Seconds: 5.1012, 
+Epoch/Fold: 007/1, Train Loss: 0.0362 Test Loss:0.0240, Seconds: 5.6015, 
+Epoch/Fold: 008/1, Train Loss: 0.0752 Test Loss:0.6410, Seconds: 5.3740, 
+Epoch/Fold: 009/1, Train Loss: 0.2614 Test Loss:0.1846, Seconds: 5.4900, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 1, Seconds/epoch: 5.522522974014282
+Acc.: 0.71
+Epoch/Fold: 000/2, Train Loss: 0.1884 Test Loss:0.1077, Seconds: 5.1420, 
+Epoch/Fold: 001/2, Train Loss: 0.0194 Test Loss:0.0124, Seconds: 5.3393, 
+Epoch/Fold: 002/2, Train Loss: 0.0151 Test Loss:0.0229, Seconds: 5.4851, 
+Epoch/Fold: 003/2, Train Loss: 0.0544 Test Loss:0.1257, Seconds: 5.3531, 
+Epoch/Fold: 004/2, Train Loss: 0.1927 Test Loss:0.4156, Seconds: 5.6487, 
+Epoch/Fold: 005/2, Train Loss: 0.3396 Test Loss:0.2279, Seconds: 6.2606, 
+Epoch/Fold: 006/2, Train Loss: 0.4380 Test Loss:0.3250, Seconds: 4.8483, 
+Epoch/Fold: 007/2, Train Loss: 0.6893 Test Loss:2.3594, Seconds: 5.8714, 
+Epoch/Fold: 008/2, Train Loss: 0.7222 Test Loss:1.2687, Seconds: 4.8161, 
+Epoch/Fold: 009/2, Train Loss: 1.0391 Test Loss:0.6363, Seconds: 4.4222, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 2, Seconds/epoch: 5.318687701225281
+Acc.: 0.79
+Epoch/Fold: 000/3, Train Loss: 0.2882 Test Loss:0.0454, Seconds: 5.5108, 
+Epoch/Fold: 001/3, Train Loss: 0.0201 Test Loss:0.0078, Seconds: 5.4452, 
+Epoch/Fold: 002/3, Train Loss: 0.0043 Test Loss:0.0017, Seconds: 5.4785, 
+Epoch/Fold: 003/3, Train Loss: 0.0012 Test Loss:0.0004, Seconds: 5.6090, 
+Epoch/Fold: 004/3, Train Loss: 0.0018 Test Loss:0.0024, Seconds: 5.3256, 
+Epoch/Fold: 005/3, Train Loss: 0.0273 Test Loss:0.0205, Seconds: 5.3254, 
+Epoch/Fold: 006/3, Train Loss: 0.1228 Test Loss:0.0933, Seconds: 5.2554, 
+Epoch/Fold: 007/3, Train Loss: 0.2377 Test Loss:0.0823, Seconds: 5.4890, 
+Epoch/Fold: 008/3, Train Loss: 0.3912 Test Loss:0.1413, Seconds: 6.0297, 
+Epoch/Fold: 009/3, Train Loss: 0.4677 Test Loss:0.1069, Seconds: 6.8081, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 3, Seconds/epoch: 5.627662348747253
+Acc.: 0.7
+Epoch/Fold: 000/4, Train Loss: 0.2742 Test Loss:0.4697, Seconds: 5.4251, 
+Epoch/Fold: 001/4, Train Loss: 0.1934 Test Loss:0.1800, Seconds: 4.9601, 
+Epoch/Fold: 002/4, Train Loss: 0.1520 Test Loss:0.1259, Seconds: 5.4528, 
+Epoch/Fold: 003/4, Train Loss: 0.1350 Test Loss:0.1390, Seconds: 5.1720, 
+Epoch/Fold: 004/4, Train Loss: 0.1405 Test Loss:0.1424, Seconds: 5.3424, 
+Epoch/Fold: 005/4, Train Loss: 0.1478 Test Loss:0.0883, Seconds: 5.5773, 
+Epoch/Fold: 006/4, Train Loss: 0.0960 Test Loss:0.1204, Seconds: 5.7405, 
+Epoch/Fold: 007/4, Train Loss: 0.0771 Test Loss:0.2115, Seconds: 5.3695, 
+Epoch/Fold: 008/4, Train Loss: 0.1295 Test Loss:0.1118, Seconds: 5.4066, 
+Epoch/Fold: 009/4, Train Loss: 0.1186 Test Loss:0.1552, Seconds: 5.4569, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 4, Seconds/epoch: 5.390326905250549
+Acc.: 0.75
+Epoch/Fold: 000/5, Train Loss: 0.1794 Test Loss:0.1194, Seconds: 5.1760, 
+Epoch/Fold: 001/5, Train Loss: 0.0953 Test Loss:0.0572, Seconds: 5.0639, 
+Epoch/Fold: 002/5, Train Loss: 0.0347 Test Loss:0.0383, Seconds: 5.0647, 
+Epoch/Fold: 003/5, Train Loss: 0.0220 Test Loss:0.0159, Seconds: 5.6842, 
+Epoch/Fold: 004/5, Train Loss: 0.0119 Test Loss:0.0071, Seconds: 5.3134, 
+Epoch/Fold: 005/5, Train Loss: 0.0059 Test Loss:0.0063, Seconds: 5.3479, 
+Epoch/Fold: 006/5, Train Loss: 0.0075 Test Loss:0.0113, Seconds: 5.4033, 
+Epoch/Fold: 007/5, Train Loss: 0.0142 Test Loss:0.0238, Seconds: 5.3199, 
+Epoch/Fold: 008/5, Train Loss: 0.0388 Test Loss:0.1025, Seconds: 5.4315, 
+Epoch/Fold: 009/5, Train Loss: 0.1122 Test Loss:0.0559, Seconds: 5.4158, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 5, Seconds/epoch: 5.3220590353012085
+Acc.: 0.72
+Epoch/Fold: 000/6, Train Loss: 0.1466 Test Loss:0.2547, Seconds: 5.2721, 
+Epoch/Fold: 001/6, Train Loss: 0.0481 Test Loss:0.0127, Seconds: 5.2416, 
+Epoch/Fold: 002/6, Train Loss: 0.0136 Test Loss:0.0110, Seconds: 5.0601, 
+Epoch/Fold: 003/6, Train Loss: 0.0122 Test Loss:0.0096, Seconds: 5.6449, 
+Epoch/Fold: 004/6, Train Loss: 0.0179 Test Loss:0.0470, Seconds: 5.0778, 
+Epoch/Fold: 005/6, Train Loss: 0.0262 Test Loss:0.0537, Seconds: 5.6958, 
+Epoch/Fold: 006/6, Train Loss: 0.0558 Test Loss:0.0787, Seconds: 5.0976, 
+Epoch/Fold: 007/6, Train Loss: 0.0897 Test Loss:0.1395, Seconds: 5.4766, 
+Epoch/Fold: 008/6, Train Loss: 0.0920 Test Loss:0.1497, Seconds: 5.1999, 
+Epoch/Fold: 009/6, Train Loss: 0.0982 Test Loss:0.1628, Seconds: 6.0255, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 6, Seconds/epoch: 5.379192352294922
+Acc.: 0.73
+Epoch/Fold: 000/7, Train Loss: 0.1335 Test Loss:0.0255, Seconds: 5.3233, 
+Epoch/Fold: 001/7, Train Loss: 0.0147 Test Loss:0.0105, Seconds: 5.2958, 
+Epoch/Fold: 002/7, Train Loss: 0.0103 Test Loss:0.0114, Seconds: 5.1849, 
+Epoch/Fold: 003/7, Train Loss: 0.0066 Test Loss:0.0066, Seconds: 5.4315, 
+Epoch/Fold: 004/7, Train Loss: 0.0062 Test Loss:0.0075, Seconds: 5.2221, 
+Epoch/Fold: 005/7, Train Loss: 0.0062 Test Loss:0.0072, Seconds: 5.3950, 
+Epoch/Fold: 006/7, Train Loss: 0.0146 Test Loss:0.0479, Seconds: 4.8849, 
+Epoch/Fold: 007/7, Train Loss: 0.0468 Test Loss:0.1069, Seconds: 6.2620, 
+Epoch/Fold: 008/7, Train Loss: 0.3296 Test Loss:0.3416, Seconds: 5.4498, 
+Epoch/Fold: 009/7, Train Loss: 0.1603 Test Loss:0.3160, Seconds: 5.3524, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 7, Seconds/epoch: 5.380155634880066
+Acc.: 0.74
+Epoch/Fold: 000/8, Train Loss: 0.1531 Test Loss:0.0694, Seconds: 5.3883, 
+Epoch/Fold: 001/8, Train Loss: 0.0718 Test Loss:0.0396, Seconds: 5.4751, 
+Epoch/Fold: 002/8, Train Loss: 0.0587 Test Loss:0.0557, Seconds: 5.2511, 
+Epoch/Fold: 003/8, Train Loss: 0.0260 Test Loss:0.0199, Seconds: 5.4573, 
+Epoch/Fold: 004/8, Train Loss: 0.0307 Test Loss:0.0301, Seconds: 6.1412, 
+Epoch/Fold: 005/8, Train Loss: 0.0384 Test Loss:0.0815, Seconds: 6.2367, 
+Epoch/Fold: 006/8, Train Loss: 0.0758 Test Loss:0.0246, Seconds: 5.2285, 
+Epoch/Fold: 007/8, Train Loss: 0.1507 Test Loss:0.0697, Seconds: 5.2901, 
+Epoch/Fold: 008/8, Train Loss: 0.3019 Test Loss:0.3121, Seconds: 5.3935, 
+Epoch/Fold: 009/8, Train Loss: 0.3511 Test Loss:0.5862, Seconds: 5.2247, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 8, Seconds/epoch: 5.508646774291992
+Acc.: 0.75
+Epoch/Fold: 000/9, Train Loss: 0.1295 Test Loss:0.0931, Seconds: 5.3765, 
+Epoch/Fold: 001/9, Train Loss: 0.0107 Test Loss:0.0123, Seconds: 5.2223, 
+Epoch/Fold: 002/9, Train Loss: 0.0079 Test Loss:0.0169, Seconds: 5.2182, 
+Epoch/Fold: 003/9, Train Loss: 0.0181 Test Loss:0.0217, Seconds: 5.3815, 
+Epoch/Fold: 004/9, Train Loss: 0.0328 Test Loss:0.0420, Seconds: 5.2219, 
+Epoch/Fold: 005/9, Train Loss: 0.0377 Test Loss:0.0595, Seconds: 5.3055, 
+Epoch/Fold: 006/9, Train Loss: 0.0382 Test Loss:0.0536, Seconds: 5.4534, 
+Epoch/Fold: 007/9, Train Loss: 0.0582 Test Loss:0.0365, Seconds: 5.8794, 
+Epoch/Fold: 008/9, Train Loss: 0.0645 Test Loss:0.0893, Seconds: 5.5139, 
+Epoch/Fold: 009/9, Train Loss: 0.1442 Test Loss:0.1561, Seconds: 5.3927, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 9, Seconds/epoch: 5.396501207351685
+Acc.: 0.73
+
+Run:  1
+Train Loss: 0.1442
+Convergence Time (Epochs): 10
+AVG TIME PER EPOCH: 5.3965 s
+TOTAL TIME TAKEN: 0.0150 h
+Acc mean: 0.735, std: 0.023769728648009445
+
+Epoch/Fold: 000/0, Train Loss: 0.2015 Test Loss:0.0670, Seconds: 5.6198, 
+Epoch/Fold: 001/0, Train Loss: 0.0450 Test Loss:0.0149, Seconds: 6.0651, 
+Epoch/Fold: 002/0, Train Loss: 0.0148 Test Loss:0.0120, Seconds: 5.2826, 
+Epoch/Fold: 003/0, Train Loss: 0.0068 Test Loss:0.0024, Seconds: 5.3687, 
+Epoch/Fold: 004/0, Train Loss: 0.0053 Test Loss:0.0031, Seconds: 5.2528, 
+Epoch/Fold: 005/0, Train Loss: 0.0037 Test Loss:0.0011, Seconds: 5.5389, 
+Epoch/Fold: 006/0, Train Loss: 0.0035 Test Loss:0.0032, Seconds: 5.2839, 
+Epoch/Fold: 007/0, Train Loss: 0.0060 Test Loss:0.0033, Seconds: 5.3878, 
+Epoch/Fold: 008/0, Train Loss: 0.0139 Test Loss:0.0203, Seconds: 5.6035, 
+Epoch/Fold: 009/0, Train Loss: 0.0410 Test Loss:0.0320, Seconds: 5.5892, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 0, Seconds/epoch: 5.4992258787155155
+Acc.: 0.73
+Epoch/Fold: 000/1, Train Loss: 0.8735 Test Loss:0.3305, Seconds: 5.3437, 
+Epoch/Fold: 001/1, Train Loss: 0.1887 Test Loss:0.1022, Seconds: 5.3243, 
+Epoch/Fold: 002/1, Train Loss: 0.0990 Test Loss:0.0165, Seconds: 6.3902, 
+Epoch/Fold: 003/1, Train Loss: 0.0144 Test Loss:0.0159, Seconds: 5.3047, 
+Epoch/Fold: 004/1, Train Loss: 0.0032 Test Loss:0.0073, Seconds: 5.4370, 
+Epoch/Fold: 005/1, Train Loss: 0.0151 Test Loss:0.0754, Seconds: 5.1475, 
+Epoch/Fold: 006/1, Train Loss: 0.0713 Test Loss:0.0537, Seconds: 5.5653, 
+Epoch/Fold: 007/1, Train Loss: 0.2002 Test Loss:0.2408, Seconds: 5.6658, 
+Epoch/Fold: 008/1, Train Loss: 0.3122 Test Loss:0.1875, Seconds: 5.6195, 
+Epoch/Fold: 009/1, Train Loss: 0.4988 Test Loss:0.4955, Seconds: 5.3347, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 1, Seconds/epoch: 5.513255882263183
+Acc.: 0.73
+Epoch/Fold: 000/2, Train Loss: 0.1478 Test Loss:0.2711, Seconds: 5.5968, 
+Epoch/Fold: 001/2, Train Loss: 0.0251 Test Loss:0.0350, Seconds: 5.4591, 
+Epoch/Fold: 002/2, Train Loss: 0.0142 Test Loss:0.0066, Seconds: 5.3809, 
+Epoch/Fold: 003/2, Train Loss: 0.0142 Test Loss:0.0502, Seconds: 5.3138, 
+Epoch/Fold: 004/2, Train Loss: 0.0152 Test Loss:0.0095, Seconds: 5.3478, 
+Epoch/Fold: 005/2, Train Loss: 0.0197 Test Loss:0.0208, Seconds: 5.1856, 
+Epoch/Fold: 006/2, Train Loss: 0.0401 Test Loss:0.1125, Seconds: 5.3966, 
+Epoch/Fold: 007/2, Train Loss: 0.1123 Test Loss:0.2007, Seconds: 6.5860, 
+Epoch/Fold: 008/2, Train Loss: 0.5667 Test Loss:0.6473, Seconds: 5.3950, 
+Epoch/Fold: 009/2, Train Loss: 0.4135 Test Loss:0.2281, Seconds: 5.3476, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 2, Seconds/epoch: 5.50091507434845
+Acc.: 0.78
+Epoch/Fold: 000/3, Train Loss: 0.1576 Test Loss:0.0589, Seconds: 5.6543, 
+Epoch/Fold: 001/3, Train Loss: 0.0635 Test Loss:0.0259, Seconds: 5.4098, 
+Epoch/Fold: 002/3, Train Loss: 0.0540 Test Loss:0.0447, Seconds: 5.2876, 
+Epoch/Fold: 003/3, Train Loss: 0.0290 Test Loss:0.0114, Seconds: 5.4895, 
+Epoch/Fold: 004/3, Train Loss: 0.0149 Test Loss:0.0021, Seconds: 5.5993, 
+Epoch/Fold: 005/3, Train Loss: 0.0037 Test Loss:0.0026, Seconds: 5.4834, 
+Epoch/Fold: 006/3, Train Loss: 0.0015 Test Loss:0.0008, Seconds: 5.2833, 
+Epoch/Fold: 007/3, Train Loss: 0.0065 Test Loss:0.0134, Seconds: 5.3144, 
+Epoch/Fold: 008/3, Train Loss: 0.0357 Test Loss:0.0462, Seconds: 5.6924, 
+Epoch/Fold: 009/3, Train Loss: 0.0654 Test Loss:0.0922, Seconds: 5.5988, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 3, Seconds/epoch: 5.481277799606323
+Acc.: 0.66
+Epoch/Fold: 000/4, Train Loss: 0.2581 Test Loss:0.0852, Seconds: 5.4717, 
+Epoch/Fold: 001/4, Train Loss: 0.1098 Test Loss:0.0749, Seconds: 5.2902, 
+Epoch/Fold: 002/4, Train Loss: 0.0509 Test Loss:0.0537, Seconds: 5.3664, 
+Epoch/Fold: 003/4, Train Loss: 0.0308 Test Loss:0.0287, Seconds: 5.4630, 
+Epoch/Fold: 004/4, Train Loss: 0.0168 Test Loss:0.0144, Seconds: 5.7715, 
+Epoch/Fold: 005/4, Train Loss: 0.0182 Test Loss:0.0590, Seconds: 5.1482, 
+Epoch/Fold: 006/4, Train Loss: 0.0461 Test Loss:0.1066, Seconds: 5.4699, 
+Epoch/Fold: 007/4, Train Loss: 0.0743 Test Loss:0.0301, Seconds: 5.3004, 
+Epoch/Fold: 008/4, Train Loss: 0.0680 Test Loss:0.5482, Seconds: 4.9834, 
+Epoch/Fold: 009/4, Train Loss: 0.3646 Test Loss:0.4386, Seconds: 6.0631, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 4, Seconds/epoch: 5.432780814170838
+Acc.: 0.74
+Epoch/Fold: 000/5, Train Loss: 0.1079 Test Loss:0.0466, Seconds: 5.5126, 
+Epoch/Fold: 001/5, Train Loss: 0.0184 Test Loss:0.0037, Seconds: 5.9133, 
+Epoch/Fold: 002/5, Train Loss: 0.0040 Test Loss:0.0022, Seconds: 6.3986, 
+Epoch/Fold: 003/5, Train Loss: 0.0027 Test Loss:0.0019, Seconds: 5.2669, 
+Epoch/Fold: 004/5, Train Loss: 0.0032 Test Loss:0.0127, Seconds: 5.2916, 
+Epoch/Fold: 005/5, Train Loss: 0.0075 Test Loss:0.0278, Seconds: 5.2314, 
+Epoch/Fold: 006/5, Train Loss: 0.0106 Test Loss:0.0069, Seconds: 5.4197, 
+Epoch/Fold: 007/5, Train Loss: 0.0071 Test Loss:0.0140, Seconds: 5.5902, 
+Epoch/Fold: 008/5, Train Loss: 0.0184 Test Loss:0.0243, Seconds: 5.3572, 
+Epoch/Fold: 009/5, Train Loss: 0.0201 Test Loss:0.0132, Seconds: 5.2156, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 5, Seconds/epoch: 5.519704365730286
+Acc.: 0.72
+Epoch/Fold: 000/6, Train Loss: 0.1233 Test Loss:0.0434, Seconds: 5.1349, 
+Epoch/Fold: 001/6, Train Loss: 0.0207 Test Loss:0.0287, Seconds: 5.2049, 
+Epoch/Fold: 002/6, Train Loss: 0.0310 Test Loss:0.0335, Seconds: 5.2329, 
+Epoch/Fold: 003/6, Train Loss: 0.0361 Test Loss:0.0665, Seconds: 5.2386, 
+Epoch/Fold: 004/6, Train Loss: 0.0425 Test Loss:0.0573, Seconds: 5.2531, 
+Epoch/Fold: 005/6, Train Loss: 0.0453 Test Loss:0.0417, Seconds: 5.1490, 
+Epoch/Fold: 006/6, Train Loss: 0.0280 Test Loss:0.0835, Seconds: 6.4121, 
+Epoch/Fold: 007/6, Train Loss: 0.0507 Test Loss:0.0451, Seconds: 5.3553, 
+Epoch/Fold: 008/6, Train Loss: 0.0321 Test Loss:0.0662, Seconds: 5.2322, 
+Epoch/Fold: 009/6, Train Loss: 0.0456 Test Loss:0.1077, Seconds: 5.3063, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 6, Seconds/epoch: 5.351939082145691
+Acc.: 0.73
+Epoch/Fold: 000/7, Train Loss: 0.1722 Test Loss:0.0185, Seconds: 5.1588, 
+Epoch/Fold: 001/7, Train Loss: 0.0160 Test Loss:0.0253, Seconds: 4.9205, 
+Epoch/Fold: 002/7, Train Loss: 0.0125 Test Loss:0.0047, Seconds: 5.3579, 
+Epoch/Fold: 003/7, Train Loss: 0.0036 Test Loss:0.0016, Seconds: 5.7987, 
+Epoch/Fold: 004/7, Train Loss: 0.0013 Test Loss:0.0010, Seconds: 5.3159, 
+Epoch/Fold: 005/7, Train Loss: 0.0008 Test Loss:0.0035, Seconds: 5.2031, 
+Epoch/Fold: 006/7, Train Loss: 0.0054 Test Loss:0.0217, Seconds: 5.3766, 
+Epoch/Fold: 007/7, Train Loss: 0.0199 Test Loss:0.0352, Seconds: 5.4638, 
+Epoch/Fold: 008/7, Train Loss: 0.0534 Test Loss:0.2117, Seconds: 5.1156, 
+Epoch/Fold: 009/7, Train Loss: 0.1616 Test Loss:0.3821, Seconds: 5.6550, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 7, Seconds/epoch: 5.336600255966187
+Acc.: 0.8
+Epoch/Fold: 000/8, Train Loss: 0.2981 Test Loss:0.3773, Seconds: 5.2452, 
+Epoch/Fold: 001/8, Train Loss: 0.0930 Test Loss:0.0372, Seconds: 5.3494, 
+Epoch/Fold: 002/8, Train Loss: 0.1185 Test Loss:0.0607, Seconds: 5.4318, 
+Epoch/Fold: 003/8, Train Loss: 0.1464 Test Loss:0.0340, Seconds: 5.2972, 
+Epoch/Fold: 004/8, Train Loss: 0.0620 Test Loss:0.0077, Seconds: 5.3353, 
+Epoch/Fold: 005/8, Train Loss: 0.0341 Test Loss:0.0087, Seconds: 5.3178, 
+Epoch/Fold: 006/8, Train Loss: 0.0413 Test Loss:0.0092, Seconds: 5.1685, 
+Epoch/Fold: 007/8, Train Loss: 0.0282 Test Loss:0.0243, Seconds: 5.4560, 
+Epoch/Fold: 008/8, Train Loss: 0.0342 Test Loss:0.0099, Seconds: 5.1076, 
+Epoch/Fold: 009/8, Train Loss: 0.0379 Test Loss:0.0508, Seconds: 5.1843, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 8, Seconds/epoch: 5.289311528205872
+Acc.: 0.79
+Epoch/Fold: 000/9, Train Loss: 0.1433 Test Loss:0.0421, Seconds: 6.1468, 
+Epoch/Fold: 001/9, Train Loss: 0.0165 Test Loss:0.0138, Seconds: 5.2638, 
+Epoch/Fold: 002/9, Train Loss: 0.0082 Test Loss:0.0139, Seconds: 5.5375, 
+Epoch/Fold: 003/9, Train Loss: 0.0107 Test Loss:0.0381, Seconds: 5.2806, 
+Epoch/Fold: 004/9, Train Loss: 0.0372 Test Loss:0.0785, Seconds: 5.9961, 
+Epoch/Fold: 005/9, Train Loss: 0.0632 Test Loss:0.0397, Seconds: 5.4576, 
+Epoch/Fold: 006/9, Train Loss: 0.0697 Test Loss:0.1022, Seconds: 5.0390, 
+Epoch/Fold: 007/9, Train Loss: 0.1002 Test Loss:0.0720, Seconds: 5.1797, 
+Epoch/Fold: 008/9, Train Loss: 0.1232 Test Loss:0.2032, Seconds: 5.9533, 
+Epoch/Fold: 009/9, Train Loss: 0.2180 Test Loss:0.1406, Seconds: 5.3395, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 9, Seconds/epoch: 5.519381380081176
+Acc.: 0.73
+
+Run:  2
+Train Loss: 0.2180
+Convergence Time (Epochs): 10
+AVG TIME PER EPOCH: 5.5194 s
+TOTAL TIME TAKEN: 0.0153 h
+Acc mean: 0.741, std: 0.03858756276314949
+
+Epoch/Fold: 000/0, Train Loss: 0.6193 Test Loss:0.0952, Seconds: 5.2954, 
+Epoch/Fold: 001/0, Train Loss: 0.1171 Test Loss:0.0086, Seconds: 5.3196, 
+Epoch/Fold: 002/0, Train Loss: 0.0344 Test Loss:0.0056, Seconds: 5.4191, 
+Epoch/Fold: 003/0, Train Loss: 0.0051 Test Loss:0.0022, Seconds: 5.2078, 
+Epoch/Fold: 004/0, Train Loss: 0.0085 Test Loss:0.0080, Seconds: 5.3527, 
+Epoch/Fold: 005/0, Train Loss: 0.0406 Test Loss:0.0511, Seconds: 5.3291, 
+Epoch/Fold: 006/0, Train Loss: 0.2668 Test Loss:0.1331, Seconds: 6.1372, 
+Epoch/Fold: 007/0, Train Loss: 0.2896 Test Loss:0.0291, Seconds: 6.6149, 
+Epoch/Fold: 008/0, Train Loss: 0.2196 Test Loss:0.2844, Seconds: 6.3504, 
+Epoch/Fold: 009/0, Train Loss: 0.3148 Test Loss:0.2091, Seconds: 5.2391, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 0, Seconds/epoch: 5.626517605781555
+Acc.: 0.75
+Epoch/Fold: 000/1, Train Loss: 0.1858 Test Loss:0.0770, Seconds: 5.3336, 
+Epoch/Fold: 001/1, Train Loss: 0.0248 Test Loss:0.0056, Seconds: 5.3194, 
+Epoch/Fold: 002/1, Train Loss: 0.0089 Test Loss:0.0041, Seconds: 5.5475, 
+Epoch/Fold: 003/1, Train Loss: 0.0110 Test Loss:0.0332, Seconds: 5.5993, 
+Epoch/Fold: 004/1, Train Loss: 0.0228 Test Loss:0.0818, Seconds: 5.4541, 
+Epoch/Fold: 005/1, Train Loss: 0.0635 Test Loss:0.0871, Seconds: 5.7103, 
+Epoch/Fold: 006/1, Train Loss: 0.1239 Test Loss:0.1704, Seconds: 5.4550, 
+Epoch/Fold: 007/1, Train Loss: 0.2662 Test Loss:0.2561, Seconds: 5.2046, 
+Epoch/Fold: 008/1, Train Loss: 0.4128 Test Loss:0.3615, Seconds: 5.1327, 
+Epoch/Fold: 009/1, Train Loss: 0.2926 Test Loss:0.3064, Seconds: 5.3863, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 1, Seconds/epoch: 5.414287781715393
+Acc.: 0.72
+Epoch/Fold: 000/2, Train Loss: 0.1085 Test Loss:0.0157, Seconds: 6.4032, 
+Epoch/Fold: 001/2, Train Loss: 0.0124 Test Loss:0.0094, Seconds: 5.7147, 
+Epoch/Fold: 002/2, Train Loss: 0.0214 Test Loss:0.0808, Seconds: 5.2425, 
+Epoch/Fold: 003/2, Train Loss: 0.0435 Test Loss:0.0102, Seconds: 5.3584, 
+Epoch/Fold: 004/2, Train Loss: 0.0409 Test Loss:0.0422, Seconds: 5.5569, 
+Epoch/Fold: 005/2, Train Loss: 0.0493 Test Loss:0.0747, Seconds: 5.3574, 
+Epoch/Fold: 006/2, Train Loss: 0.0633 Test Loss:0.1410, Seconds: 5.5876, 
+Epoch/Fold: 007/2, Train Loss: 0.0694 Test Loss:0.0601, Seconds: 5.1599, 
+Epoch/Fold: 008/2, Train Loss: 0.0793 Test Loss:0.1056, Seconds: 5.6211, 
+Epoch/Fold: 009/2, Train Loss: 0.1233 Test Loss:0.0502, Seconds: 5.1158, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 2, Seconds/epoch: 5.511765170097351
+Acc.: 0.81
+Epoch/Fold: 000/3, Train Loss: 0.1476 Test Loss:0.0123, Seconds: 5.3544, 
+Epoch/Fold: 001/3, Train Loss: 0.0245 Test Loss:0.0025, Seconds: 5.3399, 
+Epoch/Fold: 002/3, Train Loss: 0.0032 Test Loss:0.0023, Seconds: 5.4199, 
+Epoch/Fold: 003/3, Train Loss: 0.0021 Test Loss:0.0052, Seconds: 5.2361, 
+Epoch/Fold: 004/3, Train Loss: 0.0021 Test Loss:0.0023, Seconds: 5.4575, 
+Epoch/Fold: 005/3, Train Loss: 0.0021 Test Loss:0.0037, Seconds: 7.1961, 
+Epoch/Fold: 006/3, Train Loss: 0.0075 Test Loss:0.0421, Seconds: 5.4763, 
+Epoch/Fold: 007/3, Train Loss: 0.0475 Test Loss:0.1064, Seconds: 5.4885, 
+Epoch/Fold: 008/3, Train Loss: 0.3347 Test Loss:0.1554, Seconds: 5.2159, 
+Epoch/Fold: 009/3, Train Loss: 0.4072 Test Loss:0.0178, Seconds: 5.6499, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 3, Seconds/epoch: 5.583453631401062
+Acc.: 0.7
+Epoch/Fold: 000/4, Train Loss: 0.1561 Test Loss:0.0293, Seconds: 5.0961, 
+Epoch/Fold: 001/4, Train Loss: 0.0078 Test Loss:0.0222, Seconds: 5.3855, 
+Epoch/Fold: 002/4, Train Loss: 0.0047 Test Loss:0.0088, Seconds: 5.2240, 
+Epoch/Fold: 003/4, Train Loss: 0.0086 Test Loss:0.0188, Seconds: 5.3442, 
+Epoch/Fold: 004/4, Train Loss: 0.0208 Test Loss:0.0422, Seconds: 4.9961, 
+Epoch/Fold: 005/4, Train Loss: 0.0679 Test Loss:0.0869, Seconds: 5.2784, 
+Epoch/Fold: 006/4, Train Loss: 0.0945 Test Loss:0.0989, Seconds: 6.0990, 
+Epoch/Fold: 007/4, Train Loss: 0.1809 Test Loss:0.2831, Seconds: 5.3848, 
+Epoch/Fold: 008/4, Train Loss: 0.3201 Test Loss:0.2990, Seconds: 5.2069, 
+Epoch/Fold: 009/4, Train Loss: 0.4209 Test Loss:1.1075, Seconds: 6.8036, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 4, Seconds/epoch: 5.481844782829285
+Acc.: 0.73
+Epoch/Fold: 000/5, Train Loss: 0.1171 Test Loss:0.0330, Seconds: 5.1769, 
+Epoch/Fold: 001/5, Train Loss: 0.0363 Test Loss:0.0256, Seconds: 5.5479, 
+Epoch/Fold: 002/5, Train Loss: 0.0221 Test Loss:0.0148, Seconds: 5.4170, 
+Epoch/Fold: 003/5, Train Loss: 0.0088 Test Loss:0.0037, Seconds: 5.1735, 
+Epoch/Fold: 004/5, Train Loss: 0.0022 Test Loss:0.0029, Seconds: 5.3797, 
+Epoch/Fold: 005/5, Train Loss: 0.0019 Test Loss:0.0017, Seconds: 5.6425, 
+Epoch/Fold: 006/5, Train Loss: 0.0011 Test Loss:0.0012, Seconds: 5.1999, 
+Epoch/Fold: 007/5, Train Loss: 0.0018 Test Loss:0.0044, Seconds: 5.1834, 
+Epoch/Fold: 008/5, Train Loss: 0.0037 Test Loss:0.0068, Seconds: 5.6733, 
+Epoch/Fold: 009/5, Train Loss: 0.0061 Test Loss:0.0112, Seconds: 5.2503, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 5, Seconds/epoch: 5.364429330825805
+Acc.: 0.74
+Epoch/Fold: 000/6, Train Loss: 0.1216 Test Loss:0.2062, Seconds: 5.6545, 
+Epoch/Fold: 001/6, Train Loss: 0.0326 Test Loss:0.0377, Seconds: 5.1794, 
+Epoch/Fold: 002/6, Train Loss: 0.0241 Test Loss:0.0195, Seconds: 5.8438, 
+Epoch/Fold: 003/6, Train Loss: 0.0094 Test Loss:0.0141, Seconds: 5.1621, 
+Epoch/Fold: 004/6, Train Loss: 0.0086 Test Loss:0.0372, Seconds: 5.2066, 
+Epoch/Fold: 005/6, Train Loss: 0.0124 Test Loss:0.0533, Seconds: 5.3542, 
+Epoch/Fold: 006/6, Train Loss: 0.0193 Test Loss:0.0108, Seconds: 5.3774, 
+Epoch/Fold: 007/6, Train Loss: 0.0135 Test Loss:0.0338, Seconds: 5.1787, 
+Epoch/Fold: 008/6, Train Loss: 0.0198 Test Loss:0.0284, Seconds: 5.4062, 
+Epoch/Fold: 009/6, Train Loss: 0.0171 Test Loss:0.0164, Seconds: 4.6931, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 6, Seconds/epoch: 5.30560257434845
+Acc.: 0.71
+Epoch/Fold: 000/7, Train Loss: 0.2154 Test Loss:0.0923, Seconds: 5.5494, 
+Epoch/Fold: 001/7, Train Loss: 0.0250 Test Loss:0.0083, Seconds: 5.4546, 
+Epoch/Fold: 002/7, Train Loss: 0.0056 Test Loss:0.0034, Seconds: 5.2762, 
+Epoch/Fold: 003/7, Train Loss: 0.0041 Test Loss:0.0029, Seconds: 5.3512, 
+Epoch/Fold: 004/7, Train Loss: 0.0026 Test Loss:0.0024, Seconds: 5.4515, 
+Epoch/Fold: 005/7, Train Loss: 0.0020 Test Loss:0.0019, Seconds: 5.2678, 
+Epoch/Fold: 006/7, Train Loss: 0.0015 Test Loss:0.0007, Seconds: 6.3878, 
+Epoch/Fold: 007/7, Train Loss: 0.0018 Test Loss:0.0033, Seconds: 5.3303, 
+Epoch/Fold: 008/7, Train Loss: 0.0058 Test Loss:0.0109, Seconds: 5.3575, 
+Epoch/Fold: 009/7, Train Loss: 0.0078 Test Loss:0.0032, Seconds: 5.2107, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 7, Seconds/epoch: 5.463716316223144
+Acc.: 0.8
+Epoch/Fold: 000/8, Train Loss: 0.1449 Test Loss:0.0495, Seconds: 5.0540, 
+Epoch/Fold: 001/8, Train Loss: 0.0235 Test Loss:0.0041, Seconds: 5.3090, 
+Epoch/Fold: 002/8, Train Loss: 0.0071 Test Loss:0.0085, Seconds: 5.3985, 
+Epoch/Fold: 003/8, Train Loss: 0.0100 Test Loss:0.0023, Seconds: 5.2924, 
+Epoch/Fold: 004/8, Train Loss: 0.0066 Test Loss:0.0087, Seconds: 5.3312, 
+Epoch/Fold: 005/8, Train Loss: 0.0092 Test Loss:0.0056, Seconds: 5.2664, 
+Epoch/Fold: 006/8, Train Loss: 0.0136 Test Loss:0.0262, Seconds: 5.5219, 
+Epoch/Fold: 007/8, Train Loss: 0.0251 Test Loss:0.0254, Seconds: 5.4778, 
+Epoch/Fold: 008/8, Train Loss: 0.0292 Test Loss:0.0823, Seconds: 5.2961, 
+Epoch/Fold: 009/8, Train Loss: 0.0577 Test Loss:0.0241, Seconds: 5.5547, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 8, Seconds/epoch: 5.3501875638961796
+Acc.: 0.77
+Epoch/Fold: 000/9, Train Loss: 0.2524 Test Loss:0.0840, Seconds: 6.6015, 
+Epoch/Fold: 001/9, Train Loss: 0.0236 Test Loss:0.0436, Seconds: 5.5216, 
+Epoch/Fold: 002/9, Train Loss: 0.0111 Test Loss:0.0299, Seconds: 5.2093, 
+Epoch/Fold: 003/9, Train Loss: 0.0362 Test Loss:0.0704, Seconds: 5.0847, 
+Epoch/Fold: 004/9, Train Loss: 0.0999 Test Loss:0.1721, Seconds: 4.9235, 
+Epoch/Fold: 005/9, Train Loss: 0.1807 Test Loss:0.1745, Seconds: 5.1064, 
+Epoch/Fold: 006/9, Train Loss: 0.1643 Test Loss:0.0844, Seconds: 4.3356, 
+Epoch/Fold: 007/9, Train Loss: 0.1790 Test Loss:0.1117, Seconds: 5.6545, 
+Epoch/Fold: 008/9, Train Loss: 0.2365 Test Loss:0.2645, Seconds: 5.3317, 
+Epoch/Fold: 009/9, Train Loss: 0.4469 Test Loss:0.3652, Seconds: 5.4037, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 9, Seconds/epoch: 5.317259740829468
+Acc.: 0.73
+
+Run:  3
+Train Loss: 0.4469
+Convergence Time (Epochs): 10
+AVG TIME PER EPOCH: 5.3173 s
+TOTAL TIME TAKEN: 0.0148 h
+Acc mean: 0.7460000000000001, std: 0.03498571136907183
+
+Epoch/Fold: 000/0, Train Loss: 0.1177 Test Loss:0.0116, Seconds: 5.4194, 
+Epoch/Fold: 001/0, Train Loss: 0.0155 Test Loss:0.0082, Seconds: 5.3864, 
+Epoch/Fold: 002/0, Train Loss: 0.0054 Test Loss:0.0012, Seconds: 5.7835, 
+Epoch/Fold: 003/0, Train Loss: 0.0023 Test Loss:0.0066, Seconds: 5.2577, 
+Epoch/Fold: 004/0, Train Loss: 0.0035 Test Loss:0.0041, Seconds: 5.3565, 
+Epoch/Fold: 005/0, Train Loss: 0.0062 Test Loss:0.0061, Seconds: 5.5896, 
+Epoch/Fold: 006/0, Train Loss: 0.0121 Test Loss:0.0130, Seconds: 7.1276, 
+Epoch/Fold: 007/0, Train Loss: 0.0346 Test Loss:0.0392, Seconds: 5.2792, 
+Epoch/Fold: 008/0, Train Loss: 0.0461 Test Loss:0.0530, Seconds: 5.5896, 
+Epoch/Fold: 009/0, Train Loss: 0.1287 Test Loss:0.1082, Seconds: 5.5440, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 0, Seconds/epoch: 5.633358788490296
+Acc.: 0.71
+Epoch/Fold: 000/1, Train Loss: 0.1652 Test Loss:0.0983, Seconds: 5.2149, 
+Epoch/Fold: 001/1, Train Loss: 0.0219 Test Loss:0.0205, Seconds: 5.4340, 
+Epoch/Fold: 002/1, Train Loss: 0.0067 Test Loss:0.0051, Seconds: 5.3179, 
+Epoch/Fold: 003/1, Train Loss: 0.0124 Test Loss:0.0097, Seconds: 5.2351, 
+Epoch/Fold: 004/1, Train Loss: 0.0138 Test Loss:0.0038, Seconds: 5.1537, 
+Epoch/Fold: 005/1, Train Loss: 0.0110 Test Loss:0.0115, Seconds: 5.2740, 
+Epoch/Fold: 006/1, Train Loss: 0.0065 Test Loss:0.0191, Seconds: 5.3768, 
+Epoch/Fold: 007/1, Train Loss: 0.0164 Test Loss:0.0659, Seconds: 5.4102, 
+Epoch/Fold: 008/1, Train Loss: 0.0491 Test Loss:0.0433, Seconds: 5.4323, 
+Epoch/Fold: 009/1, Train Loss: 0.0259 Test Loss:0.1902, Seconds: 6.0231, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 1, Seconds/epoch: 5.387215113639831
+Acc.: 0.72
+Epoch/Fold: 000/2, Train Loss: 0.1238 Test Loss:0.0172, Seconds: 5.5975, 
+Epoch/Fold: 001/2, Train Loss: 0.0106 Test Loss:0.0536, Seconds: 5.5773, 
+Epoch/Fold: 002/2, Train Loss: 0.0128 Test Loss:0.0104, Seconds: 5.5558, 
+Epoch/Fold: 003/2, Train Loss: 0.0072 Test Loss:0.0047, Seconds: 5.3365, 
+Epoch/Fold: 004/2, Train Loss: 0.0033 Test Loss:0.0049, Seconds: 5.9235, 
+Epoch/Fold: 005/2, Train Loss: 0.0018 Test Loss:0.0011, Seconds: 5.4851, 
+Epoch/Fold: 006/2, Train Loss: 0.0014 Test Loss:0.0022, Seconds: 5.4115, 
+Epoch/Fold: 007/2, Train Loss: 0.0019 Test Loss:0.0045, Seconds: 5.5231, 
+Epoch/Fold: 008/2, Train Loss: 0.0039 Test Loss:0.0067, Seconds: 5.3205, 
+Epoch/Fold: 009/2, Train Loss: 0.0055 Test Loss:0.0173, Seconds: 5.2712, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 2, Seconds/epoch: 5.500210475921631
+Acc.: 0.78
+Epoch/Fold: 000/3, Train Loss: 0.1753 Test Loss:0.0601, Seconds: 6.6183, 
+Epoch/Fold: 001/3, Train Loss: 0.0398 Test Loss:0.0217, Seconds: 6.3162, 
+Epoch/Fold: 002/3, Train Loss: 0.0180 Test Loss:0.0088, Seconds: 5.3394, 
+Epoch/Fold: 003/3, Train Loss: 0.0199 Test Loss:0.0154, Seconds: 5.3465, 
+Epoch/Fold: 004/3, Train Loss: 0.0446 Test Loss:0.0074, Seconds: 5.4224, 
+Epoch/Fold: 005/3, Train Loss: 0.0340 Test Loss:0.0053, Seconds: 5.6619, 
+Epoch/Fold: 006/3, Train Loss: 0.0449 Test Loss:0.0386, Seconds: 5.1323, 
+Epoch/Fold: 007/3, Train Loss: 0.0685 Test Loss:0.0558, Seconds: 5.3174, 
+Epoch/Fold: 008/3, Train Loss: 0.1314 Test Loss:0.0753, Seconds: 5.4835, 
+Epoch/Fold: 009/3, Train Loss: 0.2092 Test Loss:0.1079, Seconds: 5.5080, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 3, Seconds/epoch: 5.614584875106812
+Acc.: 0.66
+Epoch/Fold: 000/4, Train Loss: 0.2063 Test Loss:0.1899, Seconds: 5.5261, 
+Epoch/Fold: 001/4, Train Loss: 0.0473 Test Loss:0.0232, Seconds: 5.2074, 
+Epoch/Fold: 002/4, Train Loss: 0.0040 Test Loss:0.0058, Seconds: 5.4608, 
+Epoch/Fold: 003/4, Train Loss: 0.0021 Test Loss:0.0054, Seconds: 5.4840, 
+Epoch/Fold: 004/4, Train Loss: 0.0043 Test Loss:0.0061, Seconds: 5.5846, 
+Epoch/Fold: 005/4, Train Loss: 0.0100 Test Loss:0.0150, Seconds: 5.4089, 
+Epoch/Fold: 006/4, Train Loss: 0.0135 Test Loss:0.0102, Seconds: 6.1123, 
+Epoch/Fold: 007/4, Train Loss: 0.0073 Test Loss:0.0181, Seconds: 6.7782, 
+Epoch/Fold: 008/4, Train Loss: 0.0137 Test Loss:0.0418, Seconds: 5.6665, 
+Epoch/Fold: 009/4, Train Loss: 0.0413 Test Loss:0.3736, Seconds: 5.3413, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 4, Seconds/epoch: 5.657015132904053
+Acc.: 0.73
+Epoch/Fold: 000/5, Train Loss: 0.1386 Test Loss:0.0103, Seconds: 6.0611, 
+Epoch/Fold: 001/5, Train Loss: 0.0205 Test Loss:0.0173, Seconds: 5.3879, 
+Epoch/Fold: 002/5, Train Loss: 0.0080 Test Loss:0.0190, Seconds: 5.4011, 
+Epoch/Fold: 003/5, Train Loss: 0.0039 Test Loss:0.0057, Seconds: 5.1502, 
+Epoch/Fold: 004/5, Train Loss: 0.0038 Test Loss:0.0037, Seconds: 5.3217, 
+Epoch/Fold: 005/5, Train Loss: 0.0031 Test Loss:0.0041, Seconds: 5.3502, 
+Epoch/Fold: 006/5, Train Loss: 0.0073 Test Loss:0.0075, Seconds: 5.1754, 
+Epoch/Fold: 007/5, Train Loss: 0.0110 Test Loss:0.0246, Seconds: 5.4123, 
+Epoch/Fold: 008/5, Train Loss: 0.0161 Test Loss:0.0756, Seconds: 5.5121, 
+Epoch/Fold: 009/5, Train Loss: 0.0364 Test Loss:0.0439, Seconds: 5.4133, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 5, Seconds/epoch: 5.418525290489197
+Acc.: 0.75
+Epoch/Fold: 000/6, Train Loss: 0.2960 Test Loss:0.0174, Seconds: 5.5261, 
+Epoch/Fold: 001/6, Train Loss: 0.0072 Test Loss:0.0063, Seconds: 5.4006, 
+Epoch/Fold: 002/6, Train Loss: 0.0064 Test Loss:0.0109, Seconds: 5.2844, 
+Epoch/Fold: 003/6, Train Loss: 0.0167 Test Loss:0.0533, Seconds: 5.2896, 
+Epoch/Fold: 004/6, Train Loss: 0.0745 Test Loss:0.4605, Seconds: 5.6997, 
+Epoch/Fold: 005/6, Train Loss: 0.1483 Test Loss:0.8908, Seconds: 5.3519, 
+Epoch/Fold: 006/6, Train Loss: 0.2276 Test Loss:1.3522, Seconds: 4.9770, 
+Epoch/Fold: 007/6, Train Loss: 0.6025 Test Loss:2.5597, Seconds: 6.2786, 
+Epoch/Fold: 008/6, Train Loss: 0.9884 Test Loss:1.1401, Seconds: 5.3550, 
+Epoch/Fold: 009/6, Train Loss: 0.7169 Test Loss:1.4399, Seconds: 5.4042, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 6, Seconds/epoch: 5.456711983680725
+Acc.: 0.73
+Epoch/Fold: 000/7, Train Loss: 0.1907 Test Loss:0.0845, Seconds: 5.4076, 
+Epoch/Fold: 001/7, Train Loss: 0.0793 Test Loss:0.0851, Seconds: 6.8893, 
+Epoch/Fold: 002/7, Train Loss: 0.0721 Test Loss:0.0528, Seconds: 5.2616, 
+Epoch/Fold: 003/7, Train Loss: 0.0821 Test Loss:0.0599, Seconds: 5.5250, 
+Epoch/Fold: 004/7, Train Loss: 0.0700 Test Loss:0.0515, Seconds: 5.3813, 
+Epoch/Fold: 005/7, Train Loss: 0.0614 Test Loss:0.0429, Seconds: 5.4384, 
+Epoch/Fold: 006/7, Train Loss: 0.1200 Test Loss:0.1256, Seconds: 5.4738, 
+Epoch/Fold: 007/7, Train Loss: 0.1121 Test Loss:0.1201, Seconds: 5.2971, 
+Epoch/Fold: 008/7, Train Loss: 0.1426 Test Loss:0.1218, Seconds: 5.4427, 
+Epoch/Fold: 009/7, Train Loss: 1.0114 Test Loss:0.1880, Seconds: 5.3601, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 7, Seconds/epoch: 5.547696876525879
+Acc.: 0.78
+Epoch/Fold: 000/8, Train Loss: 0.3814 Test Loss:0.1311, Seconds: 5.5966, 
+Epoch/Fold: 001/8, Train Loss: 0.5937 Test Loss:0.0756, Seconds: 5.6397, 
+Epoch/Fold: 002/8, Train Loss: 0.1923 Test Loss:0.0593, Seconds: 5.3449, 
+Epoch/Fold: 003/8, Train Loss: 0.0209 Test Loss:0.0036, Seconds: 5.0950, 
+Epoch/Fold: 004/8, Train Loss: 0.0051 Test Loss:0.0035, Seconds: 5.1691, 
+Epoch/Fold: 005/8, Train Loss: 0.0310 Test Loss:0.0340, Seconds: 5.9520, 
+Epoch/Fold: 006/8, Train Loss: 0.1165 Test Loss:0.1465, Seconds: 5.4085, 
+Epoch/Fold: 007/8, Train Loss: 0.2124 Test Loss:0.0163, Seconds: 5.6705, 
+Epoch/Fold: 008/8, Train Loss: 0.1701 Test Loss:0.1223, Seconds: 5.4598, 
+Epoch/Fold: 009/8, Train Loss: 0.4016 Test Loss:2.1937, Seconds: 5.3311, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 8, Seconds/epoch: 5.466747093200683
+Acc.: 0.75
+Epoch/Fold: 000/9, Train Loss: 0.1963 Test Loss:0.0115, Seconds: 5.4126, 
+Epoch/Fold: 001/9, Train Loss: 0.0093 Test Loss:0.0032, Seconds: 5.9603, 
+Epoch/Fold: 002/9, Train Loss: 0.0033 Test Loss:0.0037, Seconds: 5.4754, 
+Epoch/Fold: 003/9, Train Loss: 0.0026 Test Loss:0.0039, Seconds: 5.7842, 
+Epoch/Fold: 004/9, Train Loss: 0.0035 Test Loss:0.0427, Seconds: 5.4144, 
+Epoch/Fold: 005/9, Train Loss: 0.0302 Test Loss:0.2819, Seconds: 5.4694, 
+Epoch/Fold: 006/9, Train Loss: 0.1490 Test Loss:0.8908, Seconds: 5.2471, 
+Epoch/Fold: 007/9, Train Loss: 0.3231 Test Loss:1.8180, Seconds: 5.4527, 
+Epoch/Fold: 008/9, Train Loss: 0.2115 Test Loss:0.1123, Seconds: 5.3156, 
+Epoch/Fold: 009/9, Train Loss: 0.2802 Test Loss:6.4268, Seconds: 5.1946, 
+Data shapes: (900, 512) (900,) (100, 512) (100,)
+Fold 9, Seconds/epoch: 5.4726262331008915
+Acc.: 0.71
+
+Run:  4
+Train Loss: 0.2802
+Convergence Time (Epochs): 10
+AVG TIME PER EPOCH: 5.4726 s
+TOTAL TIME TAKEN: 0.0152 h
+Acc mean: 0.732, std: 0.034
+
+
+Final Train Loss: 0.2760 ± 0.4410
+Seconds/epoch: 5.4500
+Hours/total: 0.0151
+Averages over 5 runs:
+0.7368 0.03246537390997802
+

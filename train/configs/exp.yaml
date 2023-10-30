@@ -1,0 +1,19 @@
+dataset: exp-classify
+num_workers: 8
+model:
+  gMHA_type: Hadamard
+  gnn_type: GINEConv
+  nlayer_gnn: 2
+  nlayer_mlpmixer: 4
+  hidden_size: 512
+train:
+  lr_patience: 20
+  epochs: 30
+  batch_size: 128
+metis:
+  n_patches: 32
+pos_enc:
+  rw_dim: 10
+  patch_rw_dim: 10
+  patch_num_diff: 0
+device: 1

@@ -1,0 +1,22 @@
+dataset: DD
+num_workers: 8
+model:
+  gMHA_type: Hadamard
+  gnn_type: GINEConv
+  nlayer_gnn: 3
+  nlayer_mlpmixer: 4
+  hidden_size: 512
+train:
+  lr_patience: 20
+  epochs: 20
+  batch_size: 128
+  lr: 0.0005
+  runs: 5
+metis:
+  n_patches: 32
+pos_enc:
+  rw_dim: 30
+  patch_rw_dim: 30
+  lap_dim: 0
+  patch_num_diff: 0
+device: 0

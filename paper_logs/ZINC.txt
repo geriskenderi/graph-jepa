@@ -1,0 +1,465 @@
+--------------------------------------------------
+dataset: ZINC
+depth: -1
+device: 1
+jepa:
+  enable: True
+  num_context: 1
+  num_targets: 4
+logfile: None
+metis:
+  drop_rate: 0.3
+  enable: True
+  n_patches: 32
+  num_hops: 1
+  online: True
+model:
+  gMHA_type: Hadamard
+  gnn_type: GINEConv
+  hidden_size: 512
+  nlayer_gnn: 2
+  nlayer_mlpmixer: 4
+  pool: mean
+  residual: True
+num_workers: 8
+pos_enc:
+  lap_dim: 0
+  patch_num_diff: 0
+  patch_rw_dim: 20
+  rw_dim: 20
+seed: None
+train:
+  batch_size: 128
+  dropout: 0.0
+  epochs: 30
+  lr: 0.0005
+  lr_decay: 0.5
+  lr_patience: 20
+  min_lr: 1e-05
+  mlpmixer_dropout: 0.0
+  multiscale: False
+  optimizer: Adam
+  runs: 10
+  wd: 0.0
+--------------------------------------------------
+Time: 2023/09/12 - 23:28
+
+Number of parameters: 19238916
+Epoch: 000, Train Loss: 0.0313, Val: 0.0014, Test: 0.0013 Seconds: 25.9218
+Epoch: 001, Train Loss: 0.0015, Val: 0.0019, Test: 0.0018 Seconds: 22.9889
+Epoch: 002, Train Loss: 0.0018, Val: 0.0023, Test: 0.0021 Seconds: 27.8142
+Epoch: 003, Train Loss: 0.0021, Val: 0.0028, Test: 0.0025 Seconds: 24.4024
+Epoch: 004, Train Loss: 0.0021, Val: 0.0022, Test: 0.0020 Seconds: 25.1360
+Epoch: 005, Train Loss: 0.0020, Val: 0.0019, Test: 0.0018 Seconds: 25.6871
+Epoch: 006, Train Loss: 0.0019, Val: 0.0021, Test: 0.0020 Seconds: 26.9345
+Epoch: 007, Train Loss: 0.0019, Val: 0.0024, Test: 0.0022 Seconds: 24.7259
+Epoch: 008, Train Loss: 0.0019, Val: 0.0019, Test: 0.0017 Seconds: 25.8019
+Epoch: 009, Train Loss: 0.0019, Val: 0.0018, Test: 0.0017 Seconds: 22.9896
+Epoch: 010, Train Loss: 0.0017, Val: 0.0022, Test: 0.0021 Seconds: 23.8644
+Epoch: 011, Train Loss: 0.0016, Val: 0.0025, Test: 0.0024 Seconds: 24.5654
+Epoch: 012, Train Loss: 0.0015, Val: 0.0012, Test: 0.0012 Seconds: 24.7369
+Epoch: 013, Train Loss: 0.0012, Val: 0.0017, Test: 0.0016 Seconds: 26.3767
+Epoch: 014, Train Loss: 0.0012, Val: 0.0014, Test: 0.0014 Seconds: 23.6786
+Epoch: 015, Train Loss: 0.0012, Val: 0.0012, Test: 0.0012 Seconds: 25.5830
+Epoch: 016, Train Loss: 0.0012, Val: 0.0014, Test: 0.0013 Seconds: 23.0601
+Epoch: 017, Train Loss: 0.0014, Val: 0.0014, Test: 0.0013 Seconds: 26.3559
+Epoch: 018, Train Loss: 0.0014, Val: 0.0014, Test: 0.0014 Seconds: 24.3693
+Epoch: 019, Train Loss: 0.0014, Val: 0.0016, Test: 0.0015 Seconds: 27.3948
+Epoch: 020, Train Loss: 0.0017, Val: 0.0020, Test: 0.0019 Seconds: 25.8222
+Epoch: 021, Train Loss: 0.0016, Val: 0.0019, Test: 0.0018 Seconds: 25.0266
+Epoch: 022, Train Loss: 0.0018, Val: 0.0024, Test: 0.0023 Seconds: 25.4198
+Epoch: 023, Train Loss: 0.0021, Val: 0.0021, Test: 0.0021 Seconds: 27.5444
+Epoch: 024, Train Loss: 0.0020, Val: 0.0023, Test: 0.0022 Seconds: 24.5963
+Epoch: 025, Train Loss: 0.0024, Val: 0.0029, Test: 0.0028 Seconds: 25.8388
+Epoch: 026, Train Loss: 0.0024, Val: 0.0027, Test: 0.0026 Seconds: 24.8943
+Epoch: 027, Train Loss: 0.0027, Val: 0.0029, Test: 0.0028 Seconds: 27.5490
+Epoch: 028, Train Loss: 0.0031, Val: 0.0034, Test: 0.0032 Seconds: 24.2719
+Epoch: 029, Train Loss: 0.0034, Val: 0.0047, Test: 0.0047 Seconds: 26.1912
+Data shapes: (10000, 512) (10000,) (1000, 512) (1000,)
+
+Run:  0
+Train Loss: 0.0034
+Convergence Time (Epochs): 30
+AVG TIME PER EPOCH: 25.3181 s
+TOTAL TIME TAKEN: 0.2110 h
+Train R2.: 0.8218169580564262
+MAE.: 0.4330231249332428
+
+Number of parameters: 19238916
+Epoch: 000, Train Loss: 0.0326, Val: 0.0006, Test: 0.0006 Seconds: 27.2458
+Epoch: 001, Train Loss: 0.0005, Val: 0.0007, Test: 0.0007 Seconds: 23.7107
+Epoch: 002, Train Loss: 0.0007, Val: 0.0009, Test: 0.0009 Seconds: 27.5714
+Epoch: 003, Train Loss: 0.0012, Val: 0.0016, Test: 0.0016 Seconds: 27.2633
+Epoch: 004, Train Loss: 0.0019, Val: 0.0024, Test: 0.0024 Seconds: 25.1372
+Epoch: 005, Train Loss: 0.0028, Val: 0.0029, Test: 0.0029 Seconds: 23.9796
+Epoch: 006, Train Loss: 0.0031, Val: 0.0040, Test: 0.0040 Seconds: 28.3064
+Epoch: 007, Train Loss: 0.0035, Val: 0.0036, Test: 0.0036 Seconds: 24.0864
+Epoch: 008, Train Loss: 0.0035, Val: 0.0036, Test: 0.0035 Seconds: 26.6965
+Epoch: 009, Train Loss: 0.0037, Val: 0.0044, Test: 0.0044 Seconds: 25.6127
+Epoch: 010, Train Loss: 0.0037, Val: 0.0033, Test: 0.0034 Seconds: 27.8064
+Epoch: 011, Train Loss: 0.0032, Val: 0.0031, Test: 0.0031 Seconds: 25.0058
+Epoch: 012, Train Loss: 0.0028, Val: 0.0028, Test: 0.0028 Seconds: 26.1051
+Epoch: 013, Train Loss: 0.0030, Val: 0.0027, Test: 0.0027 Seconds: 25.5082
+Epoch: 014, Train Loss: 0.0031, Val: 0.0032, Test: 0.0031 Seconds: 25.6719
+Epoch: 015, Train Loss: 0.0030, Val: 0.0031, Test: 0.0030 Seconds: 23.8300
+Epoch: 016, Train Loss: 0.0032, Val: 0.0040, Test: 0.0039 Seconds: 25.3485
+Epoch: 017, Train Loss: 0.0038, Val: 0.0048, Test: 0.0047 Seconds: 25.2677
+Epoch: 018, Train Loss: 0.0041, Val: 0.0044, Test: 0.0042 Seconds: 25.5726
+Epoch: 019, Train Loss: 0.0050, Val: 0.0058, Test: 0.0056 Seconds: 25.0676
+Epoch: 020, Train Loss: 0.0046, Val: 0.0060, Test: 0.0058 Seconds: 25.7947
+Epoch: 021, Train Loss: 0.0049, Val: 0.0046, Test: 0.0045 Seconds: 26.2286
+Epoch 00022: reducing learning rate of group 0 to 2.5000e-04.
+Epoch: 022, Train Loss: 0.0047, Val: 0.0050, Test: 0.0048 Seconds: 23.5264
+Epoch: 023, Train Loss: 0.0049, Val: 0.0050, Test: 0.0048 Seconds: 26.0676
+Epoch: 024, Train Loss: 0.0047, Val: 0.0050, Test: 0.0048 Seconds: 25.7156
+Epoch: 025, Train Loss: 0.0047, Val: 0.0045, Test: 0.0043 Seconds: 25.2874
+Epoch: 026, Train Loss: 0.0045, Val: 0.0052, Test: 0.0050 Seconds: 23.5602
+Epoch: 027, Train Loss: 0.0047, Val: 0.0051, Test: 0.0048 Seconds: 27.5151
+Epoch: 028, Train Loss: 0.0048, Val: 0.0060, Test: 0.0056 Seconds: 23.5622
+Epoch: 029, Train Loss: 0.0049, Val: 0.0052, Test: 0.0049 Seconds: 25.7452
+Data shapes: (10000, 512) (10000,) (1000, 512) (1000,)
+
+Run:  1
+Train Loss: 0.0049
+Convergence Time (Epochs): 30
+AVG TIME PER EPOCH: 25.5932 s
+TOTAL TIME TAKEN: 0.2133 h
+Train R2.: 0.8229154345733747
+MAE.: 0.43822532892227173
+
+Number of parameters: 19238916
+Epoch: 000, Train Loss: 0.0327, Val: 0.0011, Test: 0.0011 Seconds: 26.5397
+Epoch: 001, Train Loss: 0.0013, Val: 0.0016, Test: 0.0015 Seconds: 25.0758
+Epoch: 002, Train Loss: 0.0019, Val: 0.0025, Test: 0.0024 Seconds: 27.4313
+Epoch: 003, Train Loss: 0.0025, Val: 0.0030, Test: 0.0028 Seconds: 24.6957
+Epoch: 004, Train Loss: 0.0032, Val: 0.0029, Test: 0.0028 Seconds: 26.3435
+Epoch: 005, Train Loss: 0.0030, Val: 0.0032, Test: 0.0031 Seconds: 25.7377
+Epoch: 006, Train Loss: 0.0032, Val: 0.0035, Test: 0.0033 Seconds: 26.9173
+Epoch: 007, Train Loss: 0.0025, Val: 0.0029, Test: 0.0028 Seconds: 23.1547
+Epoch: 008, Train Loss: 0.0023, Val: 0.0025, Test: 0.0025 Seconds: 26.6965
+Epoch: 009, Train Loss: 0.0019, Val: 0.0018, Test: 0.0018 Seconds: 26.6979
+Epoch: 010, Train Loss: 0.0017, Val: 0.0015, Test: 0.0015 Seconds: 25.4705
+Epoch: 011, Train Loss: 0.0014, Val: 0.0014, Test: 0.0015 Seconds: 25.2367
+Epoch: 012, Train Loss: 0.0015, Val: 0.0014, Test: 0.0014 Seconds: 28.7213
+Epoch: 013, Train Loss: 0.0013, Val: 0.0013, Test: 0.0012 Seconds: 25.9724
+Epoch: 014, Train Loss: 0.0012, Val: 0.0013, Test: 0.0013 Seconds: 26.4627
+Epoch: 015, Train Loss: 0.0009, Val: 0.0008, Test: 0.0008 Seconds: 23.1538
+Epoch: 016, Train Loss: 0.0008, Val: 0.0007, Test: 0.0007 Seconds: 28.6386
+Epoch: 017, Train Loss: 0.0007, Val: 0.0006, Test: 0.0006 Seconds: 24.1537
+Epoch: 018, Train Loss: 0.0007, Val: 0.0007, Test: 0.0007 Seconds: 26.0965
+Epoch: 019, Train Loss: 0.0006, Val: 0.0007, Test: 0.0006 Seconds: 24.9176
+Epoch: 020, Train Loss: 0.0006, Val: 0.0007, Test: 0.0007 Seconds: 28.6450
+Epoch: 021, Train Loss: 0.0006, Val: 0.0007, Test: 0.0007 Seconds: 22.7357
+Epoch: 022, Train Loss: 0.0005, Val: 0.0006, Test: 0.0006 Seconds: 27.4682
+Epoch: 023, Train Loss: 0.0006, Val: 0.0006, Test: 0.0005 Seconds: 26.1613
+Epoch: 024, Train Loss: 0.0007, Val: 0.0009, Test: 0.0009 Seconds: 27.2831
+Epoch: 025, Train Loss: 0.0008, Val: 0.0009, Test: 0.0008 Seconds: 24.9718
+Epoch: 026, Train Loss: 0.0008, Val: 0.0008, Test: 0.0008 Seconds: 27.3102
+Epoch: 027, Train Loss: 0.0009, Val: 0.0012, Test: 0.0012 Seconds: 25.5473
+Epoch: 028, Train Loss: 0.0011, Val: 0.0011, Test: 0.0011 Seconds: 26.2743
+Epoch: 029, Train Loss: 0.0012, Val: 0.0014, Test: 0.0013 Seconds: 26.3111
+Data shapes: (10000, 512) (10000,) (1000, 512) (1000,)
+
+Run:  2
+Train Loss: 0.0012
+Convergence Time (Epochs): 30
+AVG TIME PER EPOCH: 26.0274 s
+TOTAL TIME TAKEN: 0.2169 h
+Train R2.: 0.8216619743456732
+MAE.: 0.4447375535964966
+
+Number of parameters: 19238916
+Epoch: 000, Train Loss: 0.0346, Val: 0.0025, Test: 0.0023 Seconds: 24.7532
+Epoch: 001, Train Loss: 0.0019, Val: 0.0023, Test: 0.0022 Seconds: 27.9903
+Epoch: 002, Train Loss: 0.0018, Val: 0.0019, Test: 0.0018 Seconds: 24.9124
+Epoch: 003, Train Loss: 0.0019, Val: 0.0021, Test: 0.0020 Seconds: 26.4824
+Epoch: 004, Train Loss: 0.0021, Val: 0.0025, Test: 0.0025 Seconds: 27.0958
+Epoch: 005, Train Loss: 0.0021, Val: 0.0021, Test: 0.0021 Seconds: 26.9777
+Epoch: 006, Train Loss: 0.0023, Val: 0.0024, Test: 0.0023 Seconds: 25.3719
+Epoch: 007, Train Loss: 0.0023, Val: 0.0025, Test: 0.0024 Seconds: 26.0429
+Epoch: 008, Train Loss: 0.0024, Val: 0.0025, Test: 0.0024 Seconds: 26.6142
+Epoch: 009, Train Loss: 0.0023, Val: 0.0027, Test: 0.0025 Seconds: 26.6942
+Epoch: 010, Train Loss: 0.0020, Val: 0.0020, Test: 0.0019 Seconds: 24.4612
+Epoch: 011, Train Loss: 0.0016, Val: 0.0014, Test: 0.0014 Seconds: 27.1124
+Epoch: 012, Train Loss: 0.0013, Val: 0.0014, Test: 0.0014 Seconds: 27.0464
+Epoch: 013, Train Loss: 0.0012, Val: 0.0016, Test: 0.0016 Seconds: 25.5284
+Epoch: 014, Train Loss: 0.0011, Val: 0.0010, Test: 0.0010 Seconds: 26.1856
+Epoch: 015, Train Loss: 0.0009, Val: 0.0009, Test: 0.0008 Seconds: 27.4445
+Epoch: 016, Train Loss: 0.0008, Val: 0.0009, Test: 0.0009 Seconds: 23.9925
+Epoch: 017, Train Loss: 0.0008, Val: 0.0012, Test: 0.0011 Seconds: 27.0169
+Epoch: 018, Train Loss: 0.0008, Val: 0.0010, Test: 0.0009 Seconds: 25.0706
+Epoch: 019, Train Loss: 0.0008, Val: 0.0007, Test: 0.0007 Seconds: 28.6172
+Epoch: 020, Train Loss: 0.0009, Val: 0.0010, Test: 0.0010 Seconds: 25.2673
+Epoch: 021, Train Loss: 0.0009, Val: 0.0008, Test: 0.0008 Seconds: 27.5439
+Epoch: 022, Train Loss: 0.0010, Val: 0.0010, Test: 0.0011 Seconds: 26.3759
+Epoch: 023, Train Loss: 0.0012, Val: 0.0012, Test: 0.0012 Seconds: 26.8092
+Epoch: 024, Train Loss: 0.0014, Val: 0.0013, Test: 0.0014 Seconds: 26.9977
+Epoch: 025, Train Loss: 0.0016, Val: 0.0016, Test: 0.0019 Seconds: 26.5954
+Epoch: 026, Train Loss: 0.0018, Val: 0.0016, Test: 0.0018 Seconds: 23.7730
+Epoch: 027, Train Loss: 0.0018, Val: 0.0016, Test: 0.0018 Seconds: 27.1853
+Epoch: 028, Train Loss: 0.0018, Val: 0.0015, Test: 0.0016 Seconds: 25.8831
+Epoch: 029, Train Loss: 0.0020, Val: 0.0019, Test: 0.0021 Seconds: 26.5504
+Data shapes: (10000, 512) (10000,) (1000, 512) (1000,)
+
+Run:  3
+Train Loss: 0.0020
+Convergence Time (Epochs): 30
+AVG TIME PER EPOCH: 26.2797 s
+TOTAL TIME TAKEN: 0.2190 h
+Train R2.: 0.8244349072694495
+MAE.: 0.43909329175949097
+
+Number of parameters: 19238916
+Epoch: 000, Train Loss: 0.0336, Val: 0.0010, Test: 0.0010 Seconds: 27.2499
+Epoch: 001, Train Loss: 0.0011, Val: 0.0012, Test: 0.0012 Seconds: 24.9496
+Epoch: 002, Train Loss: 0.0013, Val: 0.0014, Test: 0.0013 Seconds: 25.9113
+Epoch: 003, Train Loss: 0.0015, Val: 0.0015, Test: 0.0015 Seconds: 23.9098
+Epoch: 004, Train Loss: 0.0015, Val: 0.0023, Test: 0.0023 Seconds: 26.2790
+Epoch: 005, Train Loss: 0.0017, Val: 0.0016, Test: 0.0016 Seconds: 25.6922
+Epoch: 006, Train Loss: 0.0015, Val: 0.0016, Test: 0.0017 Seconds: 26.5592
+Epoch: 007, Train Loss: 0.0016, Val: 0.0022, Test: 0.0022 Seconds: 25.1054
+Epoch: 008, Train Loss: 0.0018, Val: 0.0017, Test: 0.0017 Seconds: 26.8974
+Epoch: 009, Train Loss: 0.0017, Val: 0.0023, Test: 0.0024 Seconds: 24.8095
+Epoch: 010, Train Loss: 0.0022, Val: 0.0023, Test: 0.0023 Seconds: 28.5642
+Epoch: 011, Train Loss: 0.0025, Val: 0.0030, Test: 0.0030 Seconds: 21.8740
+Epoch: 012, Train Loss: 0.0028, Val: 0.0028, Test: 0.0028 Seconds: 25.5523
+Epoch: 013, Train Loss: 0.0031, Val: 0.0034, Test: 0.0034 Seconds: 26.0859
+Epoch: 014, Train Loss: 0.0032, Val: 0.0072, Test: 0.0073 Seconds: 26.1040
+Epoch: 015, Train Loss: 0.0036, Val: 0.0036, Test: 0.0036 Seconds: 25.6312
+Epoch: 016, Train Loss: 0.0039, Val: 0.0039, Test: 0.0040 Seconds: 27.4459
+Epoch: 017, Train Loss: 0.0046, Val: 0.0047, Test: 0.0047 Seconds: 25.2377
+Epoch: 018, Train Loss: 0.0045, Val: 0.0046, Test: 0.0044 Seconds: 26.0201
+Epoch: 019, Train Loss: 0.0053, Val: 0.0057, Test: 0.0057 Seconds: 24.6962
+Epoch: 020, Train Loss: 0.0061, Val: 0.0059, Test: 0.0059 Seconds: 27.8429
+Epoch: 021, Train Loss: 0.0065, Val: 0.0074, Test: 0.0074 Seconds: 23.9157
+Epoch 00022: reducing learning rate of group 0 to 2.5000e-04.
+Epoch: 022, Train Loss: 0.0070, Val: 0.0078, Test: 0.0077 Seconds: 27.3072
+Epoch: 023, Train Loss: 0.0072, Val: 0.0075, Test: 0.0075 Seconds: 25.2339
+Epoch: 024, Train Loss: 0.0075, Val: 0.0081, Test: 0.0078 Seconds: 25.9513
+Epoch: 025, Train Loss: 0.0078, Val: 0.0081, Test: 0.0079 Seconds: 25.0664
+Epoch: 026, Train Loss: 0.0082, Val: 0.0085, Test: 0.0082 Seconds: 27.3694
+Epoch: 027, Train Loss: 0.0085, Val: 0.0088, Test: 0.0084 Seconds: 27.0240
+Epoch: 028, Train Loss: 0.0090, Val: 0.0096, Test: 0.0094 Seconds: 26.0856
+Epoch: 029, Train Loss: 0.0094, Val: 0.0101, Test: 0.0096 Seconds: 25.4989
+Data shapes: (10000, 512) (10000,) (1000, 512) (1000,)
+
+Run:  4
+Train Loss: 0.0094
+Convergence Time (Epochs): 30
+AVG TIME PER EPOCH: 25.8623 s
+TOTAL TIME TAKEN: 0.2155 h
+Train R2.: 0.8241063480505415
+MAE.: 0.43148812651634216
+
+Number of parameters: 19238916
+Epoch: 000, Train Loss: 0.0313, Val: 0.0006, Test: 0.0006 Seconds: 25.9031
+Epoch: 001, Train Loss: 0.0006, Val: 0.0007, Test: 0.0007 Seconds: 26.2132
+Epoch: 002, Train Loss: 0.0007, Val: 0.0007, Test: 0.0007 Seconds: 23.2778
+Epoch: 003, Train Loss: 0.0008, Val: 0.0010, Test: 0.0010 Seconds: 28.4816
+Epoch: 004, Train Loss: 0.0009, Val: 0.0009, Test: 0.0009 Seconds: 25.0119
+Epoch: 005, Train Loss: 0.0010, Val: 0.0010, Test: 0.0010 Seconds: 25.4469
+Epoch: 006, Train Loss: 0.0010, Val: 0.0013, Test: 0.0013 Seconds: 26.3341
+Epoch: 007, Train Loss: 0.0012, Val: 0.0013, Test: 0.0013 Seconds: 26.4911
+Epoch: 008, Train Loss: 0.0015, Val: 0.0014, Test: 0.0014 Seconds: 25.5966
+Epoch: 009, Train Loss: 0.0015, Val: 0.0024, Test: 0.0023 Seconds: 27.7473
+Epoch: 010, Train Loss: 0.0017, Val: 0.0017, Test: 0.0017 Seconds: 24.0090
+Epoch: 011, Train Loss: 0.0018, Val: 0.0019, Test: 0.0019 Seconds: 25.8882
+Epoch: 012, Train Loss: 0.0021, Val: 0.0021, Test: 0.0021 Seconds: 25.2071
+Epoch: 013, Train Loss: 0.0023, Val: 0.0028, Test: 0.0027 Seconds: 27.7278
+Epoch: 014, Train Loss: 0.0025, Val: 0.0030, Test: 0.0030 Seconds: 25.0112
+Epoch: 015, Train Loss: 0.0030, Val: 0.0041, Test: 0.0040 Seconds: 26.6159
+Epoch: 016, Train Loss: 0.0035, Val: 0.0050, Test: 0.0049 Seconds: 24.5414
+Epoch: 017, Train Loss: 0.0042, Val: 0.0046, Test: 0.0045 Seconds: 24.4943
+Epoch: 018, Train Loss: 0.0048, Val: 0.0058, Test: 0.0057 Seconds: 23.9974
+Epoch: 019, Train Loss: 0.0057, Val: 0.0064, Test: 0.0062 Seconds: 26.8733
+Epoch: 020, Train Loss: 0.0069, Val: 0.0083, Test: 0.0083 Seconds: 25.1231
+Epoch: 021, Train Loss: 0.0080, Val: 0.0085, Test: 0.0084 Seconds: 26.6073
+Epoch 00022: reducing learning rate of group 0 to 2.5000e-04.
+Epoch: 022, Train Loss: 0.0086, Val: 0.0093, Test: 0.0091 Seconds: 23.8805
+Epoch: 023, Train Loss: 0.0096, Val: 0.0093, Test: 0.0090 Seconds: 28.0206
+Epoch: 024, Train Loss: 0.0099, Val: 0.0105, Test: 0.0101 Seconds: 22.7779
+Epoch: 025, Train Loss: 0.0102, Val: 0.0117, Test: 0.0114 Seconds: 26.1433
+Epoch: 026, Train Loss: 0.0114, Val: 0.0112, Test: 0.0108 Seconds: 25.5478
+Epoch: 027, Train Loss: 0.0110, Val: 0.0107, Test: 0.0103 Seconds: 27.7291
+Epoch: 028, Train Loss: 0.0107, Val: 0.0105, Test: 0.0100 Seconds: 24.0460
+Epoch: 029, Train Loss: 0.0101, Val: 0.0109, Test: 0.0104 Seconds: 26.4203
+Data shapes: (10000, 512) (10000,) (1000, 512) (1000,)
+
+Run:  5
+Train Loss: 0.0101
+Convergence Time (Epochs): 30
+AVG TIME PER EPOCH: 25.7055 s
+TOTAL TIME TAKEN: 0.2142 h
+Train R2.: 0.8265892098986617
+MAE.: 0.41005951166152954
+
+Number of parameters: 19238916
+Epoch: 000, Train Loss: 0.0344, Val: 0.0006, Test: 0.0005 Seconds: 26.9214
+Epoch: 001, Train Loss: 0.0010, Val: 0.0015, Test: 0.0014 Seconds: 26.0330
+Epoch: 002, Train Loss: 0.0019, Val: 0.0024, Test: 0.0023 Seconds: 27.4835
+Epoch: 003, Train Loss: 0.0027, Val: 0.0030, Test: 0.0029 Seconds: 23.7997
+Epoch: 004, Train Loss: 0.0032, Val: 0.0038, Test: 0.0038 Seconds: 27.1932
+Epoch: 005, Train Loss: 0.0034, Val: 0.0032, Test: 0.0032 Seconds: 25.6635
+Epoch: 006, Train Loss: 0.0030, Val: 0.0031, Test: 0.0030 Seconds: 28.0807
+Epoch: 007, Train Loss: 0.0028, Val: 0.0031, Test: 0.0031 Seconds: 25.2788
+Epoch: 008, Train Loss: 0.0027, Val: 0.0023, Test: 0.0022 Seconds: 26.4320
+Epoch: 009, Train Loss: 0.0021, Val: 0.0023, Test: 0.0022 Seconds: 25.6588
+Epoch: 010, Train Loss: 0.0021, Val: 0.0022, Test: 0.0021 Seconds: 26.2812
+Epoch: 011, Train Loss: 0.0019, Val: 0.0021, Test: 0.0020 Seconds: 24.3173
+Epoch: 012, Train Loss: 0.0019, Val: 0.0020, Test: 0.0019 Seconds: 28.3464
+Epoch: 013, Train Loss: 0.0017, Val: 0.0016, Test: 0.0016 Seconds: 25.0178
+Epoch: 014, Train Loss: 0.0016, Val: 0.0023, Test: 0.0022 Seconds: 26.7248
+Epoch: 015, Train Loss: 0.0017, Val: 0.0018, Test: 0.0016 Seconds: 26.5152
+Epoch: 016, Train Loss: 0.0015, Val: 0.0016, Test: 0.0014 Seconds: 27.5384
+Epoch: 017, Train Loss: 0.0015, Val: 0.0015, Test: 0.0014 Seconds: 22.8336
+Epoch: 018, Train Loss: 0.0014, Val: 0.0015, Test: 0.0013 Seconds: 26.5463
+Epoch: 019, Train Loss: 0.0013, Val: 0.0013, Test: 0.0012 Seconds: 26.9034
+Epoch: 020, Train Loss: 0.0011, Val: 0.0013, Test: 0.0012 Seconds: 25.9928
+Epoch: 021, Train Loss: 0.0011, Val: 0.0012, Test: 0.0011 Seconds: 25.7056
+Epoch 00022: reducing learning rate of group 0 to 2.5000e-04.
+Epoch: 022, Train Loss: 0.0010, Val: 0.0012, Test: 0.0012 Seconds: 27.2998
+Epoch: 023, Train Loss: 0.0011, Val: 0.0012, Test: 0.0011 Seconds: 26.0042
+Epoch: 024, Train Loss: 0.0011, Val: 0.0012, Test: 0.0011 Seconds: 25.4788
+Epoch: 025, Train Loss: 0.0010, Val: 0.0010, Test: 0.0009 Seconds: 24.1957
+Epoch: 026, Train Loss: 0.0008, Val: 0.0009, Test: 0.0008 Seconds: 28.2998
+Epoch: 027, Train Loss: 0.0008, Val: 0.0009, Test: 0.0009 Seconds: 23.8103
+Epoch: 028, Train Loss: 0.0008, Val: 0.0010, Test: 0.0010 Seconds: 27.0690
+Epoch: 029, Train Loss: 0.0009, Val: 0.0010, Test: 0.0009 Seconds: 26.6952
+Data shapes: (10000, 512) (10000,) (1000, 512) (1000,)
+
+Run:  6
+Train Loss: 0.0009
+Convergence Time (Epochs): 30
+AVG TIME PER EPOCH: 26.1373 s
+TOTAL TIME TAKEN: 0.2178 h
+Train R2.: 0.8192899458709879
+MAE.: 0.44752949476242065
+
+Number of parameters: 19238916
+Epoch: 000, Train Loss: 0.0422, Val: 0.0010, Test: 0.0010 Seconds: 25.5152
+Epoch: 001, Train Loss: 0.0009, Val: 0.0009, Test: 0.0009 Seconds: 26.0881
+Epoch: 002, Train Loss: 0.0009, Val: 0.0011, Test: 0.0012 Seconds: 24.6081
+Epoch: 003, Train Loss: 0.0012, Val: 0.0013, Test: 0.0013 Seconds: 26.7558
+Epoch: 004, Train Loss: 0.0015, Val: 0.0018, Test: 0.0019 Seconds: 26.6339
+Epoch: 005, Train Loss: 0.0018, Val: 0.0017, Test: 0.0018 Seconds: 26.2630
+Epoch: 006, Train Loss: 0.0021, Val: 0.0022, Test: 0.0022 Seconds: 24.9812
+Epoch: 007, Train Loss: 0.0021, Val: 0.0023, Test: 0.0024 Seconds: 27.8392
+Epoch: 008, Train Loss: 0.0022, Val: 0.0021, Test: 0.0021 Seconds: 24.2827
+Epoch: 009, Train Loss: 0.0021, Val: 0.0023, Test: 0.0023 Seconds: 14.3255
+Epoch: 010, Train Loss: 0.0021, Val: 0.0025, Test: 0.0025 Seconds: 13.9942
+Epoch: 011, Train Loss: 0.0019, Val: 0.0018, Test: 0.0018 Seconds: 14.7860
+Epoch: 012, Train Loss: 0.0016, Val: 0.0017, Test: 0.0018 Seconds: 14.1310
+Epoch: 013, Train Loss: 0.0015, Val: 0.0017, Test: 0.0017 Seconds: 14.0656
+Epoch: 014, Train Loss: 0.0015, Val: 0.0014, Test: 0.0013 Seconds: 14.8419
+Epoch: 015, Train Loss: 0.0013, Val: 0.0013, Test: 0.0013 Seconds: 14.1247
+Epoch: 016, Train Loss: 0.0013, Val: 0.0012, Test: 0.0012 Seconds: 14.0945
+Epoch: 017, Train Loss: 0.0011, Val: 0.0011, Test: 0.0011 Seconds: 14.8444
+Epoch: 018, Train Loss: 0.0011, Val: 0.0010, Test: 0.0010 Seconds: 14.1270
+Epoch: 019, Train Loss: 0.0009, Val: 0.0010, Test: 0.0010 Seconds: 14.2082
+Epoch: 020, Train Loss: 0.0010, Val: 0.0011, Test: 0.0011 Seconds: 14.9633
+Epoch: 021, Train Loss: 0.0009, Val: 0.0009, Test: 0.0009 Seconds: 14.1268
+Epoch: 022, Train Loss: 0.0009, Val: 0.0007, Test: 0.0007 Seconds: 14.1248
+Epoch: 023, Train Loss: 0.0008, Val: 0.0007, Test: 0.0007 Seconds: 14.8243
+Epoch: 024, Train Loss: 0.0007, Val: 0.0008, Test: 0.0008 Seconds: 14.7997
+Epoch: 025, Train Loss: 0.0007, Val: 0.0007, Test: 0.0007 Seconds: 14.0946
+Epoch: 026, Train Loss: 0.0006, Val: 0.0006, Test: 0.0006 Seconds: 14.1836
+Epoch: 027, Train Loss: 0.0005, Val: 0.0008, Test: 0.0008 Seconds: 14.7135
+Epoch: 028, Train Loss: 0.0005, Val: 0.0004, Test: 0.0004 Seconds: 14.1567
+Epoch: 029, Train Loss: 0.0005, Val: 0.0004, Test: 0.0004 Seconds: 14.0842
+Data shapes: (10000, 512) (10000,) (1000, 512) (1000,)
+
+Run:  7
+Train Loss: 0.0005
+Convergence Time (Epochs): 30
+AVG TIME PER EPOCH: 17.8194 s
+TOTAL TIME TAKEN: 0.1485 h
+Train R2.: 0.8176042320941513
+MAE.: 0.45449861884117126
+
+Number of parameters: 19238916
+Epoch: 000, Train Loss: 0.0448, Val: 0.0032, Test: 0.0032 Seconds: 14.7802
+Epoch: 001, Train Loss: 0.0021, Val: 0.0022, Test: 0.0022 Seconds: 14.0915
+Epoch: 002, Train Loss: 0.0021, Val: 0.0024, Test: 0.0025 Seconds: 14.1140
+Epoch: 003, Train Loss: 0.0026, Val: 0.0027, Test: 0.0028 Seconds: 14.8646
+Epoch: 004, Train Loss: 0.0029, Val: 0.0032, Test: 0.0033 Seconds: 14.0612
+Epoch: 005, Train Loss: 0.0030, Val: 0.0027, Test: 0.0027 Seconds: 14.0992
+Epoch: 006, Train Loss: 0.0027, Val: 0.0025, Test: 0.0025 Seconds: 14.8507
+Epoch: 007, Train Loss: 0.0026, Val: 0.0025, Test: 0.0026 Seconds: 14.0354
+Epoch: 008, Train Loss: 0.0024, Val: 0.0023, Test: 0.0024 Seconds: 14.0992
+Epoch: 009, Train Loss: 0.0023, Val: 0.0023, Test: 0.0024 Seconds: 14.8687
+Epoch: 010, Train Loss: 0.0023, Val: 0.0023, Test: 0.0025 Seconds: 14.1015
+Epoch: 011, Train Loss: 0.0021, Val: 0.0022, Test: 0.0022 Seconds: 14.0793
+Epoch: 012, Train Loss: 0.0019, Val: 0.0019, Test: 0.0019 Seconds: 14.8300
+Epoch: 013, Train Loss: 0.0016, Val: 0.0015, Test: 0.0015 Seconds: 14.0917
+Epoch: 014, Train Loss: 0.0015, Val: 0.0013, Test: 0.0013 Seconds: 14.0875
+Epoch: 015, Train Loss: 0.0013, Val: 0.0012, Test: 0.0012 Seconds: 14.5580
+Epoch: 016, Train Loss: 0.0012, Val: 0.0013, Test: 0.0013 Seconds: 14.7492
+Epoch: 017, Train Loss: 0.0009, Val: 0.0008, Test: 0.0008 Seconds: 14.1067
+Epoch: 018, Train Loss: 0.0008, Val: 0.0007, Test: 0.0007 Seconds: 14.0778
+Epoch: 019, Train Loss: 0.0008, Val: 0.0008, Test: 0.0008 Seconds: 15.3087
+Epoch: 020, Train Loss: 0.0007, Val: 0.0007, Test: 0.0007 Seconds: 14.0849
+Epoch: 021, Train Loss: 0.0008, Val: 0.0008, Test: 0.0008 Seconds: 14.0759
+Epoch: 022, Train Loss: 0.0008, Val: 0.0008, Test: 0.0008 Seconds: 14.8592
+Epoch: 023, Train Loss: 0.0008, Val: 0.0008, Test: 0.0008 Seconds: 14.1336
+Epoch: 024, Train Loss: 0.0008, Val: 0.0007, Test: 0.0007 Seconds: 14.1255
+Epoch: 025, Train Loss: 0.0008, Val: 0.0007, Test: 0.0008 Seconds: 14.1149
+Epoch: 026, Train Loss: 0.0008, Val: 0.0009, Test: 0.0009 Seconds: 14.7468
+Epoch: 027, Train Loss: 0.0011, Val: 0.0008, Test: 0.0009 Seconds: 14.1480
+Epoch: 028, Train Loss: 0.0011, Val: 0.0010, Test: 0.0011 Seconds: 14.0984
+Epoch: 029, Train Loss: 0.0013, Val: 0.0012, Test: 0.0012 Seconds: 14.8462
+Data shapes: (10000, 512) (10000,) (1000, 512) (1000,)
+
+Run:  8
+Train Loss: 0.0013
+Convergence Time (Epochs): 30
+AVG TIME PER EPOCH: 14.3696 s
+TOTAL TIME TAKEN: 0.1198 h
+Train R2.: 0.8227657281743327
+MAE.: 0.4320908486843109
+
+Number of parameters: 19238916
+Epoch: 000, Train Loss: 0.0343, Val: 0.0003, Test: 0.0003 Seconds: 14.1330
+Epoch: 001, Train Loss: 0.0002, Val: 0.0003, Test: 0.0003 Seconds: 14.7342
+Epoch: 002, Train Loss: 0.0004, Val: 0.0005, Test: 0.0005 Seconds: 14.2167
+Epoch: 003, Train Loss: 0.0006, Val: 0.0009, Test: 0.0009 Seconds: 14.0952
+Epoch: 004, Train Loss: 0.0009, Val: 0.0010, Test: 0.0010 Seconds: 14.7842
+Epoch: 005, Train Loss: 0.0011, Val: 0.0013, Test: 0.0013 Seconds: 14.7137
+Epoch: 006, Train Loss: 0.0012, Val: 0.0015, Test: 0.0015 Seconds: 14.0673
+Epoch: 007, Train Loss: 0.0014, Val: 0.0014, Test: 0.0015 Seconds: 14.6004
+Epoch: 008, Train Loss: 0.0013, Val: 0.0014, Test: 0.0015 Seconds: 14.7720
+Epoch: 009, Train Loss: 0.0013, Val: 0.0012, Test: 0.0013 Seconds: 14.1284
+Epoch: 010, Train Loss: 0.0012, Val: 0.0014, Test: 0.0015 Seconds: 14.0486
+Epoch: 011, Train Loss: 0.0013, Val: 0.0020, Test: 0.0021 Seconds: 14.8422
+Epoch: 012, Train Loss: 0.0015, Val: 0.0016, Test: 0.0017 Seconds: 14.0571
+Epoch: 013, Train Loss: 0.0015, Val: 0.0017, Test: 0.0019 Seconds: 14.1072
+Epoch: 014, Train Loss: 0.0016, Val: 0.0015, Test: 0.0016 Seconds: 14.6605
+Epoch: 015, Train Loss: 0.0018, Val: 0.0029, Test: 0.0030 Seconds: 14.0318
+Epoch: 016, Train Loss: 0.0019, Val: 0.0023, Test: 0.0024 Seconds: 14.1371
+Epoch: 017, Train Loss: 0.0020, Val: 0.0018, Test: 0.0019 Seconds: 15.3721
+Epoch: 018, Train Loss: 0.0020, Val: 0.0026, Test: 0.0028 Seconds: 14.1436
+Epoch: 019, Train Loss: 0.0022, Val: 0.0025, Test: 0.0026 Seconds: 14.0788
+Epoch: 020, Train Loss: 0.0022, Val: 0.0023, Test: 0.0024 Seconds: 14.7630
+Epoch: 021, Train Loss: 0.0024, Val: 0.0024, Test: 0.0025 Seconds: 14.7560
+Epoch 00022: reducing learning rate of group 0 to 2.5000e-04.
+Epoch: 022, Train Loss: 0.0025, Val: 0.0026, Test: 0.0027 Seconds: 14.0590
+Epoch: 023, Train Loss: 0.0026, Val: 0.0026, Test: 0.0029 Seconds: 14.0960
+Epoch: 024, Train Loss: 0.0027, Val: 0.0029, Test: 0.0031 Seconds: 14.7892
+Epoch: 025, Train Loss: 0.0029, Val: 0.0029, Test: 0.0031 Seconds: 14.0455
+Epoch: 026, Train Loss: 0.0030, Val: 0.0033, Test: 0.0035 Seconds: 14.2212
+Epoch: 027, Train Loss: 0.0032, Val: 0.0031, Test: 0.0032 Seconds: 14.9632
+Epoch: 028, Train Loss: 0.0032, Val: 0.0034, Test: 0.0036 Seconds: 14.0989
+Epoch: 029, Train Loss: 0.0034, Val: 0.0035, Test: 0.0037 Seconds: 14.0447
+Data shapes: (10000, 512) (10000,) (1000, 512) (1000,)
+
+Run:  9
+Train Loss: 0.0034
+Convergence Time (Epochs): 30
+AVG TIME PER EPOCH: 14.3854 s
+TOTAL TIME TAKEN: 0.1199 h
+Train R2.: 0.8280278287711135
+MAE.: 0.41143035888671875
+
+Final Train Loss: 0.0037 ± 0.0035
+Seconds/epoch: 22.7498
+Hours/total: 0.1896
+MAE avg: 0.4342176020145416, std: 0.013620944693684578

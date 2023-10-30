@@ -1,0 +1,25 @@
+dataset: REDDIT-BINARY
+num_workers: 8
+model:
+  gMHA_type: Hadamard
+  gnn_type: GINEConv
+  nlayer_gnn: 2
+  nlayer_mlpmixer: 4
+  hidden_size: 512
+train:
+  lr_patience: 20
+  epochs: 10
+  batch_size: 32
+  lr: 0.0001
+  runs: 5
+metis:
+  n_patches: 128
+pos_enc:
+  rw_dim: 40
+  patch_rw_dim: 40
+  lap_dim: 0
+  patch_num_diff: 0
+jepa:
+  num_context: 1
+  num_targets: 4
+device: 0
