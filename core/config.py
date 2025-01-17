@@ -107,7 +107,7 @@ def set_cfg(cfg):
     cfg.jepa.num_context = 1
     # Number of patches to use as targets
     cfg.jepa.num_targets = 4
-    # Distance function: 0 = 2d Hyper, 1 = Euclidean, 2 = Hyperbolic
+    # Distance function: 0 = 2d Hyper (Ours), 1 = Euclidean, 2 = Hyperbolic (Poincaré)
     cfg.jepa.dist = 0
 
     return cfg

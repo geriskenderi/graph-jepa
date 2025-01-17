@@ -71,7 +71,7 @@ class GraphJepa(nn.Module):
         self.target_predictor = MLP(
             nhid, 2, nlayer=3, with_final_activation=False, with_norm=False)
 
-        # Use this if you wish to do euclidean or poincaré embeddings in the latent space
+        # Use this predictor if you wish to do euclidean or poincaré embeddings in the latent space
         # self.target_predictor = MLP(
         #     nhid, 2, nlayer=3, with_final_activation=False, with_norm=False)
 
@@ -155,7 +155,7 @@ class GraphJepa(nn.Module):
 
         # Make predictions using the target predictor: for each target subgraph, we use the context + the target PE
         target_prediction_embeddings = context_x + encoded_tpatch_pes.reshape(-1, self.num_target_patches, self.nhid)
-        target_y = self.target_predictor(target_prediction_embeddings) # V1: Directly predict (depends on the definition of self.target_predictor)
+        target_y = self.target_predictor(target_prediction_embeddings)
        
         return target_x, target_y
 

@@ -1,20 +1,10 @@
 # Graph-JEPA
 
-### Paper and citation
-
+### Paper (arxiv)
 [Graph-level Representation Learning with Joint-Embedding Predictive Architectures](https://arxiv.org/abs/2309.16014)
 
-```
-@article{skenderi2023graph,
-  title={Graph-level Representation Learning with Joint-Embedding Predictive Architectures},
-  author={Skenderi, Geri and Li, Hang and Tang, Jiliang and Cristani, Marco},
-  journal={arXiv preprint arXiv:2309.16014},
-  year={2023}
-}
-```
 
 ### Python environment setup with Conda
-
 ```
 conda create --name graphjepa python=3.8
 conda activate graphjepa
@@ -30,15 +20,11 @@ pip install einops
 pip install metis
 ```
 
-### Run Graph-JEPA
-
-The code for all the available datasets used in the paper is available under the `train/` folder. Inside `train/configs` you can find the specific configuration files used for each dataset, corresponding with Table 4 of the paper.
-
-`launch.sh` contains two examples of launch scripts that you can use to directly modify the default config. You can see a detailed list of the arguments in `core/config.py`
+### Running Graph-JEPA
+The code for all the available datasets used in the paper is available under the `train/` folder. Inside `train/configs` you can find the specific configuration files used for each dataset, corresponding with Table 8 of the paper. `launch.sh` contains two examples of launch scripts that you can use to directly modify the default config. You can see a detailed list of the arguments in `core/config.py`
 
 ### Reproducibility
-
-We provide the training logs containing the results published in the paper in `paper_logs/`
+For the sake of openess, we provide the training logs containing the results published in the paper in `paper_logs/`
 
 ### Credits
-This repository is largely based on [Graph-ViT-MLPMixer](https://github.com/XiaoxinHe/Graph-ViT-MLPMixer), check out their work as well if you are interested in graph-level tasks.
+This repository is largely based on [Graph-ViT-MLPMixer](https://github.com/XiaoxinHe/Graph-ViT-MLPMixer), check out their work if you are interested in graph representation learning with Transformers.
